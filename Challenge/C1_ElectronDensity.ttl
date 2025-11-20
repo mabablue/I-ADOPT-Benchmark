@@ -1,20 +1,25 @@
-@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix ex: <http://example.org/iadopt/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 @prefix iop: <https://w3id.org/iadopt/ont/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 ex:C1 a iop:Variable ;
-    rdfs:label "Electron density in the solar wind" ;
-    rdfs:comment "Density (particle per cm3) of electrons measured in the Solar Wind." ;
-    ex:issue "https://github.com/i-adopt/examples/issues/18" ;
-    iop:hasMatrix <https://gcmd.earthdata.nasa.gov/kms/concept/5d290bd8-049b-4002-86c8-8acba563d0e1> ;
-    iop:hasObjectOfInterest <http://purl.obolibrary.org/obo/CHEBI_10545> ;
-    iop:hasProperty <http://qudt.org/vocab/quantitykind/NumberDensity>.
+  ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/7" ;
+  skos:prefLabel "Electron density in the solar wind" ;
+  skos:definition "Density (particle per cm3) of electrons measured in the Solar Wind." ;
+  rdfs:comment "omit: particle per cm3, measured" ;
+    patt:vdp "https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/1.md" ;
+    patt:vdp "https://github.com/mabablue/I-ADOPT-patterns-playground/issues/3" ;
+    iop:hasMatrix <https://www.wikidata.org/wiki/Q79833> ;
+    iop:hasObjectOfInterest <https://www.wikidata.org/wiki/Q2225> ;
+    iop:hasProperty <https://www.wikidata.org/wiki/Q108914962>.
 
-<https://gcmd.earthdata.nasa.gov/kms/concept/5d290bd8-049b-4002-86c8-8acba563d0e1> a iop:Entity ;
+<https://www.wikidata.org/wiki/Q79833> a iop:Entity ;
     rdfs:label "solar wind" .
 
-<http://purl.obolibrary.org/obo/CHEBI_10545> a iop:Entity ;
+<https://www.wikidata.org/wiki/Q2225> a iop:Entity ;
     rdfs:label "electron" .
 
-
-
+<https://www.wikidata.org/wiki/Q108914962> a iop:Property ;
+   rdfs:label "number density" .
