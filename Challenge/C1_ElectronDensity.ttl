@@ -8,7 +8,7 @@ ex:C1 a iop:Variable ;
   ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/7" ;
   skos:prefLabel "Electron density in the solar wind" ;
   skos:definition "Density (particle per cm3) of electrons measured in the Solar Wind." ;
-  rdfs:comment "omit: particle per cm3, measured" ;
+  rdfs:comment "density, electron, solar wind" ;
     iop:pattern "https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/10.md" ;
     iop:hasMatrix <https://www.wikidata.org/wiki/Q79833> ;
     iop:hasObjectOfInterest <https://www.wikidata.org/wiki/Q2225> ;
