@@ -15,6 +15,7 @@ ex:C4
         """Atmospheric boundary layer, height, temperature inversion (ADD atmosphere, above ground surface).""" ;    
     iop:pattern
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP16.yaml> ;
+    iop:pattern
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP68.yaml> ;
     iop:hasObjectOfInterest 
         _:b0 ;
