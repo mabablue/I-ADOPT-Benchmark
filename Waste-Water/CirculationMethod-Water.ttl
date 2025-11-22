@@ -2,7 +2,9 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix wiki: <https://www.wikidata.org/wiki/> .
+@prefix ex: <https://example.org/data/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 ex:Circulation-Method-in-Tube
     a 
@@ -10,23 +12,28 @@ ex:Circulation-Method-in-Tube
     rdfs:label 
         "Circulation-Method-in-Tube" ;
     iop:hasObjectOfInterest 
-        wiki:Q283 ;
+        ex:Water ;
     iop:hasMatrix 
-        ex:CanalisationPipe ;
+        <https://www.wikidata.org/wiki/Q41551> ;
     iop:hasProperty 
-        iop:CirculationMethod .
+        iop:CirculationMethod ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "type: canalisation" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q41551> ;
+        ] .
 
-wiki:Q283
+ex:Water
     a 
         iop:Entity ;
     rdfs:label 
         "Water" .
 
-ex:CanalisationPipe
+<https://www.wikidata.org/wiki/Q41551>
     a 
         iop:Entity ;
     rdfs:label 
-        "CanalisationPipe" .
+        "Pipe" .
 
 iop:CirculationMethod
     a 
