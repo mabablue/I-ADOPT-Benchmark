@@ -15,6 +15,8 @@ ex:State-of-tube
         """Condition (faulty, cracked, ... ) of pipe connection in plastic with a diametre of 30 cm.""" ;
     skos:definition
          "condition, pipe connection; plastic, diametre of 30 cm" ; 
+    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP60.yaml> ;
+    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP61.yaml> ;
     iop:hasObjectOfInterest 
         ex:ConnectingPipe ;
     iop:hasProperty 
