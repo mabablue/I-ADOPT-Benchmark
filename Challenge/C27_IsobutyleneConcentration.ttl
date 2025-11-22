@@ -1,20 +1,45 @@
-@prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
 
-ex:C27 a iop:Variable ;
-    rdfs:label "Mass concentration of isobutylene in chloroform" ;
-    rdfs:comment "Mass concentration of isobutylene in chloroform." ;
-    ex:issue "https://github.com/i-adopt/examples/issues/44" ;
-    iop:hasMatrix <http://purl.obolibrary.org/obo/CHEBI_35255> ;
-    iop:hasObjectOfInterest <http://purl.obolibrary.org/obo/CHEBI_53725> ;
-    iop:hasProperty <http://qudt.org/vocab/quantitykind/MassConcentration> .
+ex:C27
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Mass concentration of isobutylene in chloroform" ;
+    skos:definition 
+        """Mass concentration of isobutylene in chloroform.""" ;
+    rdfs:comment
+        """Mass concentration, isobutylene, chloroform.""" ;  
+    iop:pattern
+       <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
+    iop:pattern
+       <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP17.yaml> ;
+    iop:pattern
+       <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP30.yaml> ;
+    iop:hasObjectOfInterest 
+        <https://www.wikidata.org/wiki/Q776976> ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/wiki/Q172275> ;
+    iop:hasProperty 
+        <https://www.wikidata.org/wiki/Q589446> .
 
-<http://purl.obolibrary.org/obo/CHEBI_35255> a iop:Entity ;
-    rdfs:label "chloroform" .
+<https://www.wikidata.org/wiki/Q776976>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "isobutylene" .
 
-<http://purl.obolibrary.org/obo/CHEBI_53725> a iop:Entity ;
-    rdfs:label "isobutylene" .
+<https://www.wikidata.org/wiki/Q172275>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "chloroform" .
 
-<http://qudt.org/vocab/quantitykind/MassConcentration> a iop:Property ;
-    rdfs:label "mass concentration" .
+<https://www.wikidata.org/wiki/Q589446>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "mass concentration" .
