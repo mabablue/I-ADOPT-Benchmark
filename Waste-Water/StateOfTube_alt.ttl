@@ -18,7 +18,10 @@ ex:State-of-tube
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP60.yaml> ;
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP12.yaml> ;
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP61.yaml> ;
+    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP62.yaml> ;
+    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP64.yaml> ;
     iop:mapping <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/mapping/MR2.yaml> ;
+
     iop:hasObjectOfInterest 
         ex:ConnectingPipe ;
     iop:hasProperty 
