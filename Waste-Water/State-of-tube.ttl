@@ -13,12 +13,14 @@ ex:State-of-tube
         "State of connection pipe" ;
     rdfs:comment 
         """Condition (faulty, cracked, ... ) of pipe connection in plastic with a diametre of 30 cm.""" ;
+    skos:definition
+         "condition, pipe connection; plastic, diametre of 30 cm" ; 
     iop:hasObjectOfInterest 
         ex:ConnectingPipe ;
     iop:hasProperty 
         <https://www.wikidata.org/wiki/Q813912> ;
     iop:hasConstraint 
-        [ a iop:Constraint ;
+        [ a iop:Constraint, <https://www.wikidata.org/wiki/Q11474> ;
              rdfs:label "plastic" ;
              iop:constrains ex:ConnectingPipe ;
         ] ,
