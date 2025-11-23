@@ -15,7 +15,8 @@ ex:C2
     skos:definition 
         """Thermodynamic temperature of the air in a height of 1.7 meter, daily maximum""" ;
     rdfs:comment
-        """Thermodynamic temperature; air; in a height of 1.7 meter; daily; maximum - ADD: atmosphere""" ;
+        """Thermodynamic temperature; air; in a height of 1.7 meter; daily; maximum - ADD: atmosphere (to distinguish it from indoors); 
+VDP10 for property;  VDP40 for context object; VDP66 for constraint:datum; VDP67 for constraint:condition.""" ;
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP40.yaml> ;
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP66.yaml> ;
