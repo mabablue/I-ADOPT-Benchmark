@@ -3,15 +3,27 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/bio/example/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
-
-ex:C27
+ex:EC1
     a 
         iop:Variable ;
     rdfs:label 
         "concentration of endosulfane sulfate in wet flesh of ostrea edulis" ;
-    rdfs:comment 
+    skos:definition 
         """Mass concentration of endosulfane sulfate in wet flesh of ostrea edulis, measured in μg/kg.""" ;
+    rdfs:comment
+        """Mass concentration; endosulfane sulfate; wet; flesh->body; ostrea edulis; ADD: normalization: per unit mass. 
+           10 for property:specific, 17 for property:concentration, 30 for matrix, 71 for constraint:normalization""" ;
+    iopp:Pattern
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP17.yaml> ;
+    iopp:Pattern
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
+    iopp:Pattern
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP30.yaml> ;
+    iopp:Pattern
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP71.yaml> ;
+
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
