@@ -1,5 +1,8 @@
+I-ADOPT Visualizer
+RDF
+URL
+SPARQL Endpoint
 @prefix ex: <http://example.org/iadopt/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
 @prefix iop: <https://w3id.org/iadopt/ont/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -13,9 +16,9 @@ ex:C1 a iop:Variable ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/1.md> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/10.md> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/14.md> ;
-    iopp:hasMatrix <https://www.wikidata.org/wiki/Q79833> ;
-    iopp:hasObjectOfInterest <https://www.wikidata.org/wiki/Q2225> ;
-    iopp:hasProperty <https://www.wikidata.org/wiki/Q108914962>.
+    iop:hasMatrix <https://www.wikidata.org/wiki/Q79833> ;
+    iop:hasObjectOfInterest <https://www.wikidata.org/wiki/Q2225> ;
+    iop:hasProperty <https://www.wikidata.org/wiki/Q108914962>.
 
 <https://www.wikidata.org/wiki/Q79833> a iop:Entity ;
     rdfs:label "solar wind" .
@@ -25,3 +28,16 @@ ex:C1 a iop:Variable ;
 
 <https://www.wikidata.org/wiki/Q108914962> a iop:Property ;
    rdfs:label "number density" .
+hasObjectOfInterest
+hasMatrix
+hasProperty
+Variable
+Electron density in the solar wind
+ex:C1
+Density (particle per cm3) of electrons measured in the Solar Wind.
+Entity
+electron
+Entity
+solar wind
+Property
+number density
