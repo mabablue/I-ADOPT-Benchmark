@@ -13,45 +13,47 @@ ex:C7
         "Maximum trunk char height" ;
     skos:definition """Maximum trunk char height, due to fire, measured above ground.""" ;
     rdfs:comment "trunk -> tree trunk, char; height, maximum, ADD: another component." ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yam> ;  
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP17.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yam> ;  
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP16.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP68.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP69.yaml> ;
     iop:hasObjectOfInterest 
-        <http://purl.jp/bio/4/id/200906050801342950> ;
+        <https://www.wikidata.org/wiki/Q11567121> ;
     iop:hasMatrix 
-        <http://purl.jp/bio/4/id/200906090403689217> ;
+        <https://www.wikidata.org/wiki/Q193472> ;
     iop:hasStatisticalModifier 
-        <http://www.ontology-of-units-of-measure.org/resource/om-2/maximum> ;
+        <https://www.wikidata.org/wiki/Q10578722> ;
     iop:hasProperty 
-        <http://qudt.org/vocab/quantitykind/Height> ;
+        <https://www.wikidata.org/wiki/Q208826> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "datum:above ground" ;
-             iop:constrains <http://qudt.org/vocab/quantitykind/Height> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q208826> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "due to: fire" ;
-             iop:constrains <http://purl.jp/bio/4/id/200906050801342950> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q11567121> ;
         ] .
 
-<http://purl.jp/bio/4/id/200906050801342950>
+<https://www.wikidata.org/wiki/Q11567121>
     a 
         iop:Entity ;
     rdfs:label 
         "char" .
 
-<http://purl.jp/bio/4/id/200906090403689217>
+<https://www.wikidata.org/wiki/Q193472>
     a 
         iop:Entity ;
     rdfs:label 
         "tree trunk" .
 
-<http://www.ontology-of-units-of-measure.org/resource/om-2/maximum>
+<https://www.wikidata.org/wiki/Q10578722>
     a 
         iop:StatisticalModifier ;
     rdfs:label 
         "maximum" .
 
-<http://qudt.org/vocab/quantitykind/Height>
+<https://www.wikidata.org/wiki/Q208826>
     a 
         iop:Property ;
     rdfs:label 
