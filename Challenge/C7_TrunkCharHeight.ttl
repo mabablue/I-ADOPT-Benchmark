@@ -12,7 +12,7 @@ ex:C7 a iop:Variable ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP17.yaml> ;
     ex:issue "https://github.com/i-adopt/examples/issues/24" ;
     iop:hasConstraint [ a iop:Constraint ;
-            rdfs:label "above ground" ;
+            rdfs:label "datum:above ground" ;
             iop:constrains <http://qudt.org/vocab/quantitykind/Height> ] ;
     iop:hasMatrix <http://purl.jp/bio/4/id/200906090403689217> ;
     iop:hasObjectOfInterest <http://purl.jp/bio/4/id/200906050801342950> ;
