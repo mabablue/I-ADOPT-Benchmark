@@ -1,33 +1,58 @@
-@prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
-ex:C7 a iop:Variable ;
-    rdfs:label "Maximum trunk char height" ;
+ex:C7
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Maximum trunk char height" ;
     skos:definition """Maximum trunk char height, due to fire, measured above ground.""" ;
     rdfs:comment "trunk -> tree trunk, char; height, maximum, ADD: another component." ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yam> ;  
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP17.yaml> ;
-    ex:issue "https://github.com/i-adopt/examples/issues/24" ;
-    iop:hasConstraint [ a iop:Constraint ;
-            rdfs:label "datum:above ground" ;
-            iop:constrains <http://qudt.org/vocab/quantitykind/Height> ] ;
-    iop:hasMatrix <http://purl.jp/bio/4/id/200906090403689217> ;
-    iop:hasObjectOfInterest <http://purl.jp/bio/4/id/200906050801342950> ;
-    iop:hasProperty <http://qudt.org/vocab/quantitykind/Height> ;
-    iop:hasStatisticalModifier <http://www.ontology-of-units-of-measure.org/resource/om-2/maximum>.
+    iop:hasObjectOfInterest 
+        <http://purl.jp/bio/4/id/200906050801342950> ;
+    iop:hasMatrix 
+        <http://purl.jp/bio/4/id/200906090403689217> ;
+    iop:hasStatisticalModifier 
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/maximum> ;
+    iop:hasProperty 
+        <http://qudt.org/vocab/quantitykind/Height> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "datum:above ground" ;
+             iop:constrains <http://qudt.org/vocab/quantitykind/Height> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "due to: fire" ;
+             iop:constrains <http://purl.jp/bio/4/id/200906050801342950> ;
+        ] .
 
-<http://purl.jp/bio/4/id/200906090403689217> a iop:Entity ;
-    rdfs:label "tree trunk" .
+<http://purl.jp/bio/4/id/200906050801342950>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "char" .
 
-<http://www.ontology-of-units-of-measure.org/resource/om-2/maximum> a iop:StatisticalModifier ;
-    rdfs:label "maximum" .
+<http://purl.jp/bio/4/id/200906090403689217>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "tree trunk" .
 
-<http://purl.jp/bio/4/id/200906050801342950> a iop:Entity ;
-    rdfs:label "char" .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/maximum>
+    a 
+        iop:StatisticalModifier ;
+    rdfs:label 
+        "maximum" .
 
-<http://qudt.org/vocab/quantitykind/Height> a iop:Property ;
-    rdfs:label "height" .
-
+<http://qudt.org/vocab/quantitykind/Height>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "height" .
