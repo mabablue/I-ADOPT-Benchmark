@@ -27,15 +27,15 @@ ex:C6
         <http://vocabs.lter-europe.net/EnvThes/30361> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "due to senescence" ;
+             rdfs:label "due to: senescence" ;
              iop:constrains <http://vocabs.lter-europe.net/EnvThes/30361> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "per unit area" ;
+             rdfs:label "normalization: per unit area" ;
              iop:constrains <http://vocabs.lter-europe.net/EnvThes/30361> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "per unit time" ;
+             rdfs:label "normalization: per unit time" ;
              iop:constrains <http://vocabs.lter-europe.net/EnvThes/30361> ;
         ] .
 
