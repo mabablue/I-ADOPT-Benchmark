@@ -3,8 +3,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <https://example.org/data/> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
 ex:State-of-tube
     a 
@@ -15,12 +14,12 @@ ex:State-of-tube
         """State (faulty, cracked, ... ) of pipe connection in plastic with a diametre of 30 cm.""" ;
     rdfs:comment
          "condition, pipe connection; plastic, diametre of 30 cm" ; 
-    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP60.yaml> ;
-    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP12.yaml> ;
-    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP61.yaml> ;
-    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP62.yaml> ;
-    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP64.yaml> ;
-    iop:mapping <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/mapping/MR2.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP60.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP12.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP61.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP62.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP64.yaml> ;
+    iopp:mapping <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/mapping/MR2.yaml> ;
     iop:hasObjectOfInterest 
         ex:PipeConnection ;
     iop:hasProperty 

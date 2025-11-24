@@ -5,6 +5,7 @@
 @prefix ex: <https://example.org/data/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
 ex:Circulation-Method-in-Tube
     a 
@@ -15,9 +16,9 @@ ex:Circulation-Method-in-Tube
         """Circulation method (gravity, forced, ...) of water in canalisation pipe""" ;
     rdfs:comment 
         """circulation method, water, pipe, canalisation""" ;
-    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP12.yaml> ;
-    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP32.yaml> ;
-    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP65.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP12.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP32.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP65.yaml> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q283> ;
     iop:hasMatrix 
