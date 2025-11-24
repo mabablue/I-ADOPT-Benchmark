@@ -5,7 +5,7 @@
 @prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
-@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
 ex:C2
     a 
@@ -17,11 +17,11 @@ ex:C2
     rdfs:comment
         """Thermodynamic temperature; air; in a height of 1.7 meter; daily; maximum - ADD: atmosphere (to distinguish it from indoors); 
 VDP10 for property;  VDP40 for context object; VDP66 for constraint:datum; VDP67 for constraint:condition.""" ;
-    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
-    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP40.yaml> ;
-    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP66.yaml> ;
-    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
-    iop:hasObjectOfInterest 
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP40.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP66.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
+    iopp:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q7391292> ;
     iop:hasContextObject 
         <https://www.wikidata.org/wiki/Q8104> ;
