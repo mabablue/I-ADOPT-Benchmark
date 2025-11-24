@@ -11,8 +11,8 @@ ex:C9
     rdfs:label 
         "Foliage projective cover in the lower canopy strata" ;
     skos:definition 
-        """The proportion of the ground area covered by foliage (or photosynthetic tissue) held in a vertical plane. Foliage Projective Cover is usually expressed as the percentage of ground covered by foliage and can be separated according to vegetation strata.""" ;
-    rdfs:comment "foliage, lower canopy strata, ground, area fraction";
+        """The proportion (percentage) of the ground area covered by foliage (or photosynthetic tissue) in the lower canopy strata.""" ;
+    rdfs:comment "foliage, lower canopy strata, ground, cover -> area fraction";
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP15.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP69.yaml> ;
