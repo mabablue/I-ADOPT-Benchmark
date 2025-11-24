@@ -1,21 +1,39 @@
-@prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
-ex:C8 a iop:Variable ;
-    rdfs:label "Coarse woody debris abundance" ;
-    rdfs:comment "CWD abundance per hectare (m2/hectare) is the abundance of CWD measured from all the plots/transects scaled to a hectare (100 x 100 m). They are calculated using the formula (see https://www.sciencedirect.com/science/article/pii/S037811270900783X)" ;
-    ex:issue "https://github.com/i-adopt/examples/issues/25" ;
-    iop:hasMatrix <http://vocabs.lter-europe.net/EnvThes/30365> ;
-    iop:hasObjectOfInterest <https://lod.nal.usda.gov/nalt/104904> ;
-    iop:hasProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/AreaFraction> .
+ex:C8
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Coarse woody debris abundance" ;
+    skos:definition """CWD abundance per hectare (m2/hectare) is the abundance of CWD measured from all the plots/transects scaled to a hectare (100 x 100 m). They are calculated using the formula (see https://www.sciencedirect.com/science/article/pii/S037811270900783X)""" ;
+    rdfs:comment "coarse woody debris, ground, area fraction" ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP15.yaml> ;
+    iop:hasObjectOfInterest 
+        <https://www.wikidata.org/wiki/Q2069734> ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/wiki/Q36133> ;
+    iop:hasProperty 
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/AreaFraction> .
 
-<http://vocabs.lter-europe.net/EnvThes/30365> a iop:Entity ;
-    rdfs:label "ground" .
+<https://www.wikidata.org/wiki/Q2069734>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "coarse woody debris" .
 
-<https://lod.nal.usda.gov/nalt/104904> a iop:Entity ;
-    rdfs:label "coarse woody debris" .
+<https://www.wikidata.org/wiki/Q36133>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "ground" .
 
-<http://www.ontology-of-units-of-measure.org/resource/om-2/AreaFraction> a iop:Property ;
-    rdfs:label "area fraction" .
-
+<http://www.ontology-of-units-of-measure.org/resource/om-2/AreaFraction>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "area fraction" .
