@@ -12,11 +12,11 @@ ex:someVar
     rdfs:label 
         "ESPC Radial velocity (away from) standard deviation over the scatter patch of water current relative to instrument in the water body by high frequency radar" ;
     skos:definition
-        """Standard deviation of the component of water velocity in a water body along radial lines centered at the HFR antenna, evaluated over the scatter patch""" ;
-    rdfs:comment "water current, water body, at the surface, standard deviation, over the scatter patch, sea, velocity, radial, positive away from the instrument, relative to the instrument" ;
+        """Standard deviation of the radial velocity (away from) standard deviation over the scatter patch of water current relative to instrument in the water body by high frequency radar""" ;
+    rdfs:comment "water current; water body; at the surface; standard deviation; over the scatter patch; sea; velocity; radial; positive away from the instrument; relative to the instrument" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP40.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP61.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP65.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP68.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
@@ -34,23 +34,23 @@ ex:someVar
         <https://www.wikidata.org/wiki/Q11465> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "at the surface" ;
+             rdfs:label "location: at the surface" ;
              iop:constrains <https://www.wikidata.org/wiki/Q15324> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "over the scatter patch" ;
+             rdfs:label "spatial distribution: over the scatter patch" ;
              iop:constrains <https://www.wikidata.org/wiki/Q159375> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "radial" ;
+             rdfs:label "type: radial" ;
              iop:constrains <https://www.wikidata.org/wiki/Q11465> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "positive away from the instrument" ;
+             rdfs:label "sign meaning: positive away from the instrument" ;
              iop:constrains <https://www.wikidata.org/wiki/Q11465> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "relative to instrument" ;
+             rdfs:label "datum: relative to instrument" ;
              iop:constrains <https://www.wikidata.org/wiki/Q11465> ;
         ] .
 
