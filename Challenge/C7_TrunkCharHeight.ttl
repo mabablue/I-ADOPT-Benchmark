@@ -11,8 +11,8 @@ ex:C7
         iop:Variable ;
     rdfs:label 
         "Maximum trunk char height" ;
-    skos:definition """Maximum trunk char height, due to fire, measured above ground.""" ;
-    rdfs:comment "trunk -> tree trunk, char; height, maximum, ADD: another component." ;
+    skos:definition """Maximum trunk char height due to fire, measured above ground.""" ;
+    rdfs:comment "trunk -> tree trunk, char; height, maximum, due to fire; above ground." ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yam> ;  
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP16.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP68.yaml> ;
