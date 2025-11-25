@@ -6,44 +6,54 @@
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
 ex:C24
     a 
         iop:Variable ;
     rdfs:label 
         "dose of applied nanomaterial internalised by a specific cell population (or per single cell) - particle number / cell area" ;
-    rdfs:comment 
-        """Correlation of dose and response for nanomaterials toxicity assessment requires information on the amount of the applied dose of nanomaterial that has been internalised by a cell population (or per specific cell) and is dependent on a number of factors including the exposure time, the particle density (i.e., whether settling occurs and thus the distribution of particles in the medium is non-homogeneous affecting the local concentration at the cell surface) etc.""" ;
+    skos:definition 
+        """the amount of the applied dose of nanomaterial that has been internalised by a cell population (or per specific cell)""" ;
+    rdfs:comment
+        """nanomaterial; cell membrane; number; location: intracellular; normalization: per area""" ;
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP14.yaml> ;
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP30.yaml> ;
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
     iop:hasObjectOfInterest 
-        <http://purl.bioontology.org/ontology/npo#NPO_199> ;
+        <https://www.wikidata.org/wiki/Q967847> ;
     iop:hasMatrix 
-        <http://purl.obolibrary.org/obo/NCIT_C33974> ;
+        <https://www.wikidata.org/wiki/Q54888819> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q108914965> ;
+        <https://www.wikidata.org/wiki/Q11563> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "loation: intracellular" ;
-             iop:constrains <http://purl.bioontology.org/ontology/npo#NPO_199> ;
+             rdfs:label "location: intracellular" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q967847> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "normalization: per area" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q108914965> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q11563> ;
         ] .
 
-<http://purl.bioontology.org/ontology/npo#NPO_199>
+<https://www.wikidata.org/wiki/Q967847>
     a 
         iop:Entity ;
     rdfs:label 
         "nanomaterial" .
 
-<http://purl.obolibrary.org/obo/NCIT_C33974>
+<https://www.wikidata.org/wiki/Q54888819>
     a 
         iop:Entity ;
     rdfs:label 
         "cell membrane" .
 
-<https://www.wikidata.org/wiki/Q108914965>
+<https://www.wikidata.org/wiki/Q11563>
     a 
         iop:Property ;
     rdfs:label 
-        "count" .
+        "number" .
