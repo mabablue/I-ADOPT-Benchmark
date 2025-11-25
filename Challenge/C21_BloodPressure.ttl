@@ -3,43 +3,56 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
 ex:C21
     a 
         iop:Variable ;
     rdfs:label 
         "Resting systolic blood pressure" ;
-    rdfs:comment 
+    skos:definition 
         """Resting systolic blood pressure in millimeters of mercury (mmHg)""" ;
+    rdfs:comment 
+        """blood; human; condition: resting; pressure; state: systolic""" ;
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP31.yaml> ;
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP76.yaml> ;
     iop:hasObjectOfInterest 
-        <http://purl.obolibrary.org/obo/UBERON_0000178> ;
+        <https://www.wikidata.org/wiki/Q7873> ;
     iop:hasMatrix 
-        <http://purl.obolibrary.org/obo/NCIT_C14225> ;
+        <https://www.wikidata.org/wiki/Q5> ;
     iop:hasProperty 
-        <http://qudt.org/vocab/quantitykind/Pressure> ;
+        <https://www.wikidata.org/wiki/Q39552> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: resting" ;
-             iop:constrains <http://purl.obolibrary.org/obo/NCIT_C14225> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q5> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "state: systolic" ;
-             iop:constrains <http://qudt.org/vocab/quantitykind/Pressure> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q39552> ;
         ] .
 
-<http://purl.obolibrary.org/obo/UBERON_0000178>
+<https://www.wikidata.org/wiki/Q7873>
     a 
         iop:Entity ;
     rdfs:label 
         "blood" .
 
-<http://purl.obolibrary.org/obo/NCIT_C14225>
+<https://www.wikidata.org/wiki/Q5>
     a 
         iop:Entity ;
     rdfs:label 
         "human" .
 
-<http://qudt.org/vocab/quantitykind/Pressure>
+<https://www.wikidata.org/wiki/Q39552>
     a 
         iop:Property ;
     rdfs:label 
