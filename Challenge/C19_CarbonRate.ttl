@@ -3,43 +3,52 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:C19
     a 
         iop:Variable ;
     rdfs:label 
         "Weight specific-ingestion Carbon rate at 15 °C" ;
-    rdfs:comment 
+    skos:definition 
         """The amount of carbon consumed by an organism at non-limiting concentration of food relative to the individual dry weight measured at 15°C. It is expressed as μg C mg DW−1 h−1""" ;
+    rdfs:comment "Carbon, at non-limiting conditions -> condition: under non-limiting food conditions, from food to organism, food, organism, dry -> state: dry, mass flow rate, weight-specific -> normalization: per mass, at 15°C temperature -> condition: at 15°C temperature, due to: ingestion" ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP18.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP34.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP71.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP72.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP76.yaml> ;
     iop:hasObjectOfInterest 
-        <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27594> ;
+        <https://www.wikidata.org/wiki/Q623> ;
     iop:hasMatrix 
         _:b0 ;
     iop:hasProperty 
-        <http://qudt.org/vocab/quantitykind/MassFlowRate> ;
+        <https://www.wikidata.org/wiki/Q1366187> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "normalization: per mass" ;
-             iop:constrains <http://qudt.org/vocab/quantitykind/MassFlowRate> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q1366187> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "state: dry" ;
-             iop:constrains <http://vocabs.lter-europe.net/EnvThes/26> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q7239> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "condition: at non-limiting conditions" ;
-             iop:constrains <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27594> ;
+             rdfs:label "condition: under non-limiting food conditions" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q623> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "condition: at 15°C temperature" ;
-             iop:constrains <http://qudt.org/vocab/quantitykind/MassFlowRate> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q1366187> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "due to: ingestion" ;
-             iop:constrains <http://qudt.org/vocab/quantitykind/MassFlowRate> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q1366187> ;
         ] .
 
-<https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27594>
+<https://www.wikidata.org/wiki/Q623>
     a 
         iop:Entity ;
     rdfs:label 
@@ -52,23 +61,23 @@ _:b0
     rdfs:label 
         "from food to organism" ;
     iop:hasSource 
-        <http://vocabs.lter-europe.net/EnvThes/20523> ;
+        <https://www.wikidata.org/wiki/Q2095> ;
     iop:hasTarget 
-        <http://vocabs.lter-europe.net/EnvThes/26> .
+        <https://www.wikidata.org/wiki/Q7239> .
 
-<http://qudt.org/vocab/quantitykind/MassFlowRate>
+<https://www.wikidata.org/wiki/Q1366187>
     a 
         iop:Property ;
     rdfs:label 
         "mass flow rate" .
 
-<http://vocabs.lter-europe.net/EnvThes/20523>
+<https://www.wikidata.org/wiki/Q2095>
     a 
         iop:Entity ;
     rdfs:label 
         "food" .
 
-<http://vocabs.lter-europe.net/EnvThes/26>
+<https://www.wikidata.org/wiki/Q7239>
     a 
         iop:Entity ;
     rdfs:label 
