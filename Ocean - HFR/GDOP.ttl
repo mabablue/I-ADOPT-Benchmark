@@ -6,7 +6,7 @@
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
 
-ex:RadVelErrHF
+ex:GDOP
     a 
         iop:Variable ;
     rdfs:label 
