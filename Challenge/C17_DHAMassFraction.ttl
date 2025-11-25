@@ -19,7 +19,7 @@ ex:C17
         <http://qudt.org/vocab/quantitykind/MassFraction> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "dry" ;
+             rdfs:label "condition: dry" ;
              iop:constrains <http://vocabs.lter-europe.net/EnvThes/26> ;
         ] ,
         [ a iop:Constraint ;
