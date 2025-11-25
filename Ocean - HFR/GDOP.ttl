@@ -12,8 +12,8 @@ ex:RadVelErrHF
     rdfs:label 
         "GDOP Geometric dilution of precision " ;
     skos:definition
-        """Unitless coefficient characterizing the effect that HFR station geometry has on the measurement and position determination errors. A low GDOP corresponds to an optimal geometric configuration of radar stations, and results in accurate surface current data. Essentially, GDOP is a quantitative way to relate the radial and velocity vector uncertainties. Setting a threshold on GDOP for total combination avoids the combination of radials with an intersection angle below a certain value. GDOP is a useful metric for filtering errant velocities due to poor geometry.""" ;
-    rdfs:comment "relative position, dilution of precision" ;
+        """Geometric dilution of precision of the relative position, based on the position of the receiver and the transmitters. Unitless coefficient characterizing the effect that HFR station geometry has on the measurement and position determination errors. A low GDOP corresponds to an optimal geometric configuration of radar stations, and results in accurate surface current data. Essentially, GDOP is a quantitative way to relate the radial and velocity vector uncertainties. Setting a threshold on GDOP for total combination avoids the combination of radials with an intersection angle below a certain value. GDOP is a useful metric for filtering errant velocities due to poor geometry.""" ;
+    rdfs:comment "relative position; dilution of precision; position of receiver; position of transmitters" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP27.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP91.yaml> ;
     iop:hasObjectOfInterest 
