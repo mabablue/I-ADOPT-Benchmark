@@ -1,30 +1,50 @@
-@prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
-ex:C10 a iop:Variable ;
-    rdfs:label "Peak ground acceleration" ;
-    rdfs:comment "Peak acceleration measured on the earth surface when facing seismic events, like earthquakes." ;
-    ex:issue "https://github.com/i-adopt/examples/issues/27" ;
-    iop:hasConstraint [ a iop:Constraint, <http://vocabs.lter-europe.net/EnvThes/10316> ;
-            rdfs:label "surface" ;
-            iop:constrains <http://vocabs.lter-europe.net/EnvThes/30365> ],
-                     [ a iop:Constraint ;
-            rdfs:label "due to seismic event" ;
-            iop:constrains <https://qudt.org/vocab/quantitykind/Acceleration> ] ;
-    iop:hasObjectOfInterest <http://vocabs.lter-europe.net/EnvThes/30365> ;
-    iop:hasProperty <https://qudt.org/vocab/quantitykind/Acceleration> ;
-    iop:hasStatisticalModifier <http://www.ontology-of-units-of-measure.org/resource/om-2/maximum> .
+ex:C10
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Peak ground acceleration" ;
+    skos:definition  
+        """Peak acceleration measured on the earth surface when facing seismic events, like earthquakes.""" ;
+    rdfs:comment "ground, maximum, acceleration, due to: seismic event, surface -> location: surface" ;
+	iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
+	iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP72.yaml> ;
+	iop:hasObjectOfInterest 
+        <https://www.wikidata.org/wiki/Q36133> ;
+    iop:hasStatisticalModifier 
+        <https://www.wikidata.org/wiki/Q10578722> ;
+    iop:hasProperty 
+        <https://www.wikidata.org/wiki/Q11376> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "surface" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q36133> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "due to seismic event" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q11376> ;
+        ] .
 
-<http://www.ontology-of-units-of-measure.org/resource/om-2/maximum> a iop:StatisticalModifier ;
-    rdfs:label "maximum" .
+<https://www.wikidata.org/wiki/Q36133>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "ground" .
 
-<https://qudt.org/vocab/quantitykind/Acceleration> a iop:Property ;
-    rdfs:label "acceleration" .
+<https://www.wikidata.org/wiki/Q10578722>
+    a 
+        iop:StatisticalModifier ;
+    rdfs:label 
+        "maximum" .
 
-<http://vocabs.lter-europe.net/EnvThes/30365> a iop:Entity ;
-    rdfs:label "ground" .
-	
-	
-<http://vocabs.lter-europe.net/EnvThes/10316> rdfs:label "surface" .
-
+<https://www.wikidata.org/wiki/Q11376>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "acceleration" .
