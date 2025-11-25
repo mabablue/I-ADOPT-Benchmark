@@ -19,17 +19,17 @@ ex:C30
     iop:pattern: <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml>
     iop:pattern: <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP77.yaml>
     iop:hasObjectOfInterest 
-        _:b0 ;
+        <https://www.wikidata.org/wiki/Q104462307> ;
     iop:hasMatrix 
-        <http://purl.obolibrary.org/obo/NCIT_C16960> ;
+        <https://www.wikidata.org/wiki/Q181600> ;
     iop:hasProperty 
-        <http://www.ontology-of-units-of-measure.org/resource/om-2/Date> ;
+        <https://www.wikidata.org/wiki/Q205892> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "method: performed by a certified laboratory" ;
              iop:constrains _:b0 ;
         ] ,
-        [ a iop:Constraint ;
+        [ a iop:Constraint, <https://www.wikidata.org/wiki/Q82069695> ;
              rdfs:label "type: SARS-CoV2 " ;
              iop:constrains _:b0 ;
         ] ,
@@ -38,20 +38,20 @@ ex:C30
              iop:constrains <http://www.ontology-of-units-of-measure.org/resource/om-2/Date> ;
         ] .
 
-_:b0
+<https://www.wikidata.org/wiki/Q104462307>
     a 
         iop:Entity ;
     rdfs:label 
         "PCR-test" .
 
-<http://purl.obolibrary.org/obo/NCIT_C16960>
+<https://www.wikidata.org/wiki/Q181600>
     a 
         iop:Entity ;
     rdfs:label 
         "patient" .
 
-<http://www.ontology-of-units-of-measure.org/resource/om-2/Date>
+<https://www.wikidata.org/wiki/Q205892>
     a 
         iop:Property ;
     rdfs:label 
-        "date" .
+        "calender date" .
