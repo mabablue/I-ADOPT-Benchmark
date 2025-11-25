@@ -1,27 +1,54 @@
-@prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
 
-ex:C30 a iop:Variable ;
-    rdfs:label "Date of last PCR-test" ;
-    rdfs:comment "date of last COVID-19 PCR test performed by a certified laboratory" ;
-    ex:issue "https://github.com/i-adopt/examples/issues/47" ;
-    iop:hasConstraint [ a iop:Constraint ;
-            rdfs:label "performed by a certified laboratory" ;
-            iop:constrains <http://purl.obolibrary.org/obo/CIDO_0020276> ] ;
-    iop:hasMatrix <http://purl.obolibrary.org/obo/NCIT_C16960> ;
-    iop:hasStatisticalModifier <http://www.ontology-of-units-of-measure.org/resource/om-2/last> ;
-    iop:hasObjectOfInterest <http://purl.obolibrary.org/obo/CIDO_0020276> ;
-    iop:hasProperty <http://www.ontology-of-units-of-measure.org/resource/om-2/Date> .
+ex:C30
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Date of last PCR-test" ;
+    rdfs:comment 
+        """date of last COVID-19 PCR test performed by a certified laboratory""" ;
+    iop:hasObjectOfInterest 
+        _:b0 ;
+    iop:hasMatrix 
+        <http://purl.obolibrary.org/obo/NCIT_C16960> ;
+    iop:hasStatisticalModifier 
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/last> ;
+    iop:hasProperty 
+        <http://www.ontology-of-units-of-measure.org/resource/om-2/Date> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "method: performed by a certified laboratory" ;
+             iop:constrains _:b0 ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "type: SARS-CoV2 " ;
+             iop:constrains _:b0 ;
+        ] .
 
-<http://purl.obolibrary.org/obo/NCIT_C16960> a iop:Entity ;
-    rdfs:label "patient" .
+_:b0
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "PCR-test" .
 
-<http://www.ontology-of-units-of-measure.org/resource/om-2/last> a iop:StatisticalModifier ;
-    rdfs:label "last" .
+<http://purl.obolibrary.org/obo/NCIT_C16960>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "patient" .
 
-<http://www.ontology-of-units-of-measure.org/resource/om-2/Date> a iop:Property ;
-    rdfs:label "date" .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/last>
+    a 
+        iop:StatisticalModifier ;
+    rdfs:label 
+        "last" .
 
-<http://purl.obolibrary.org/obo/CIDO_0020276> a iop:Entity ;
-    rdfs:label "SARS-CoV2 PCR-test" .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/Date>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "date" .
