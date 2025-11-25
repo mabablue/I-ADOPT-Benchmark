@@ -31,19 +31,19 @@ ex:RadVelErrHF
         <https://www.wikidata.org/wiki/Q11465> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "relative to instrument" ;
+             rdfs:label "datum: relative to instrument" ;
              iop:constrains <https://www.wikidata.org/wiki/Q11465> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "at the surface" ;
+             rdfs:label "location: at the surface" ;
              iop:constrains <https://www.wikidata.org/wiki/Q15324> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "positive away from the instrument" ;
+             rdfs:label "sign meaning: positive away from the instrument" ;
              iop:constrains <https://www.wikidata.org/wiki/Q11465> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "radial" ;
+             rdfs:label "type: radial" ;
              iop:constrains <https://www.wikidata.org/wiki/Q11465> ;
         ] .
 
