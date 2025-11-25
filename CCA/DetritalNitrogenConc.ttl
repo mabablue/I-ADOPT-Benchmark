@@ -10,8 +10,11 @@
         iop:Variable ;
     rdfs:label 
         "Labile detrital nitrogen concentration in the seabed" ;
-    rdfs:comment 
+    skos:definition 
         """Labile detrital nitrogen concentration in the seabed in mmoleN/kg in sediment.""" ;
+    rdfs:comment 
+        """Labile; detrital -> origin: detrital organic material; nitrogen; concentration -> molar concentration; seabed; sediment.""" ;
+    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q627> ;
     iop:hasMatrix 
