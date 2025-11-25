@@ -5,6 +5,7 @@
 @prefix ex: <https://example.org/data/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
+
 ex:State-of-tube
     a 
         iop:Variable ;
@@ -23,23 +24,28 @@ ex:State-of-tube
     iop:hasObjectOfInterest 
         ex:PipeConnection ;
     iop:hasProperty 
-        ex:StateOfPipeConnection ;
+        _:b0 ;
     iop:hasConstraint 
-        [ a iop:Constraint, <https://www.wikidata.org/wiki/Q11474> ;
+        [ a iop:Constraint ;
              rdfs:label "material type: plastic" ;
              iop:constrains ex:PipeConnection ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "size:diameter of 30 cm" ;
              iop:constrains ex:PipeConnection ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "controlled list: state of pipe connection" ;
+             iop:constrains _:b0 ;
         ] .
 
 ex:PipeConnection
-    a iop:Entity ;
+    a 
+        iop:Entity ;
     rdfs:label 
         "pipe connection" .
 
-ex:StateOfPipeConnection
+_:b0
     a 
         iop:Property ;
     rdfs:label 
