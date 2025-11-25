@@ -12,7 +12,7 @@ ex:RadVelErrHF
     rdfs:label 
         "RDVA Radial velocity (away from) of water current relative to instrument in the water body by High Frequency Radar" ;
     skos:definition 
-        """Component of the sea surface current velocity that is directed toward (negative values) or away from (positive values) the High Frequency Radar (HFR) antenna, measured along the lines of sight of the antenna, i.e. along radial lines centered at the HFR antenna.""" ;
+        """Component of the sea surface current velocity that is directed toward (negative values) or away from (positive values) the High Frequency Radar (HFR) antenna.""" ;
     rdfs:comment "water current, water body, at the surface, sea, velocity, relative to instrument, positive away from the instrument, radial" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP13.yaml> ;
