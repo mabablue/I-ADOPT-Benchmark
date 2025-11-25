@@ -3,43 +3,49 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:C15
     a 
         iop:Variable ;
     rdfs:label 
         "Foraminifera, planktic, size" ;
-    rdfs:comment 
+    skos:definition
         """Size of planktic foraminifers in surface sediments, see https://doi.pangaea.de/10.1594/PANGAEA.126730""" ;
+    rdfs:comment "foraminifera, sediment, size, planctonic -> type: planktonic, surface -> location: surface" ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP30.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP61.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q107027> ;
     iop:hasMatrix 
-        <http://vocabs.lter-europe.net/EnvThes/20899> ;
+        <https://www.wikidata.org/wiki/Q180184> ;
     iop:hasProperty 
-        <https://kos.lifewatch.eu/thesauri/phytotraits/c_15> ;
+        <https://www.wikidata.org/wiki/Q322481> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "type: planctonic" ;
+             rdfs:label "type: planktonic" ;
              iop:constrains <https://www.wikidata.org/wiki/Q107027> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "location: surface" ;
-             iop:constrains <http://vocabs.lter-europe.net/EnvThes/20899> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q180184> ;
         ] .
 
 <https://www.wikidata.org/wiki/Q107027>
     a 
         iop:Entity ;
     rdfs:label 
-        "foraminfera" .
+        "foraminifera" .
 
-<http://vocabs.lter-europe.net/EnvThes/20899>
+<https://www.wikidata.org/wiki/Q180184>
     a 
         iop:Entity ;
     rdfs:label 
         "sediment" .
 
-<https://kos.lifewatch.eu/thesauri/phytotraits/c_15>
+<https://www.wikidata.org/wiki/Q322481>
     a 
         iop:Property ;
     rdfs:label 
