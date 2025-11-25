@@ -6,16 +6,28 @@
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
 ex:C25
     a 
         iop:Variable ;
     rdfs:label 
         "Dynamic shear viscosity of polystyrene PS042" ;
-    rdfs:comment 
+    skos:definition 
         """Dynamic shear viscosity of polystyrene PS042 under the testing conditions of DIN 51810-1.""" ;
+    rdfs:comment
+        """polystyrene; type: PS042; shear viscosity; type: dynamic; condition: under testing conditions of DIN 51810-1""" ;
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP13.yaml> ;
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP61.yaml> ;
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
     iop:hasObjectOfInterest 
-        <http://purl.obolibrary.org/obo/CHEBI_53276> ;
+        <https://www.wikidata.org/wiki/Q146243> ;
     iop:hasProperty 
         <http://purl.jp/bio/4/id/200906084861039558> ;
     iop:hasConstraint 
@@ -29,10 +41,10 @@ ex:C25
         ] ,
         [ a iop:Constraint ;
              rdfs:label "type. PS042" ;
-             iop:constrains <http://purl.obolibrary.org/obo/CHEBI_53276> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q146243> ;
         ] .
 
-<http://purl.obolibrary.org/obo/CHEBI_53276>
+<https://www.wikidata.org/wiki/Q146243>
     a 
         iop:Entity ;
     rdfs:label 
