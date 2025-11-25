@@ -17,7 +17,7 @@ ex:C24
     skos:definition 
         """the amount of the applied dose of nanomaterial that has been internalised by a cell population (or per specific cell)""" ;
     rdfs:comment
-        """nanomaterial; cell membrane; number; location: intracellular; normalization: per area""" ;
+        """nanomaterial; cell membrane; number; location: intracellular; normalization: per area; ADD: mass per cell area""" ;
     iop:pattern 
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP14.yaml> ;
     iop:pattern 
