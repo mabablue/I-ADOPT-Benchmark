@@ -17,9 +17,9 @@ ex:C23
     iop:hasObjectOfInterest 
         <http://purl.bioontology.org/ontology/npo#NPO_199> ;
     iop:hasMatrix 
-        <http://purl.obolibrary.org/obo/NCIT_C33974> ;
-    iop:hasProperty 
         _:b0 ;
+    iop:hasProperty 
+        _:b1 ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "location: intracellular" ;
@@ -27,7 +27,7 @@ ex:C23
         ] ,
         [ a iop:Constraint ;
              rdfs:label "normalization: per area" ;
-             iop:constrains _:b0 ;
+             iop:constrains _:b1 ;
         ] .
 
 <http://purl.bioontology.org/ontology/npo#NPO_199>
@@ -36,13 +36,13 @@ ex:C23
     rdfs:label 
         "nanomaterial" .
 
-<http://purl.obolibrary.org/obo/NCIT_C33974>
+_:b0
     a 
         iop:Entity ;
     rdfs:label 
-        "cell surface" .
+        "cell membrane" .
 
-_:b0
+_:b1
     a 
         iop:Property ;
     rdfs:label 
