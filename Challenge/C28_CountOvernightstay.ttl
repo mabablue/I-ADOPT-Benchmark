@@ -7,20 +7,27 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
 ex:C28
     a 
         iop:Variable ;
     rdfs:label 
         "Overnight stays in 3-star hotel near the sea shore" ;
-    rdfs:comment 
+    skos:definition 
         """Number of nights in a 3-star hotel near the sea shore""" ;
+    rdfs:comment
+        """nights; hotel; number; location: near the sea shore; type: 3 star""";
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP61.yaml> ;
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/entity/Q3346212> ;
+        <https://www.wikidata.org/wiki/Q575> ;
     iop:hasMatrix 
         <https://www.wikidata.org/wiki/Q27686> ;
     iop:hasProperty 
-        <https://qudt.org/vocab/quantitykind/Count> ;
+        <https://www.wikidata.org/wiki/Q11563> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "location: near the sea shore" ;
@@ -29,17 +36,13 @@ ex:C28
         [ a iop:Constraint ;
              rdfs:label "type: 3 star" ;
              iop:constrains <https://www.wikidata.org/wiki/Q27686> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "type: overnight " ;
-             iop:constrains <https://www.wikidata.org/entity/Q3346212> ;
         ] .
 
-<https://www.wikidata.org/entity/Q3346212>
+<https://www.wikidata.org/wiki/Q575>
     a 
         iop:Entity ;
     rdfs:label 
-        "stay" .
+        "nights" .
 
 <https://www.wikidata.org/wiki/Q27686>
     a 
@@ -47,8 +50,8 @@ ex:C28
     rdfs:label 
         "hotel" .
 
-<https://qudt.org/vocab/quantitykind/Count>
+<https://www.wikidata.org/wiki/Q11563>
     a 
         iop:Property ;
     rdfs:label 
-        "count" .
+        "number" .
