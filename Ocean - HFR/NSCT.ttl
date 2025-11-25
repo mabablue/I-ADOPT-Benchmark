@@ -13,7 +13,7 @@
         "NSCT Northward velocity of water current in the water body by high frequency radar" ;
     skos:definition 
         """Component of the sea surface current velocity that is directed northward (positive values) or southward (negative values)""" ;
-    rdfs:comment "water current, water -> water body, surface layer -> location: at the surface, sea, velocity, norhtward -> type: northward" ;
+    rdfs:comment "water current; water -> water body; surface layer -> at the surface; sea; velocity; norhtward -> northward" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP13.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP31.yaml> ;
