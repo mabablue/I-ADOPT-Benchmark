@@ -3,59 +3,69 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/HFR> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:RadVelErrHF
     a 
         iop:Variable ;
     rdfs:label 
         "RDVA Radial velocity (away from) of water current relative to instrument in the water body by High Frequency Radar" ;
-    rdfs:comment 
+    skos:definition 
         """Component of the sea surface current velocity that is directed toward (negative values) or away from (positive values) the High Frequency Radar (HFR) antenna, measured along the lines of sight of the antenna, i.e. along radial lines centered at the HFR antenna.""" ;
+    rdfs:comment "water current, water body, at the surface, sea, velocity, relative to instrument, positive away from the instrument, radial" ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP13.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP31.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP40.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP68.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP81.yaml> ;
     iop:hasObjectOfInterest 
-        <http://vocab.nerc.ac.uk/collection/S29/current/PE001307/> ;
+        <https://www.wikidata.org/wiki/Q5195029> ;
     iop:hasMatrix 
-        <http://vocab.nerc.ac.uk/collection/S21/current/S21S027/> ;
+        <https://www.wikidata.org/wiki/Q15324> ;
     iop:hasContextObject 
-        <http://opendata.inrae.fr/thesaurusINRAE/c_1384> ;
+        <https://www.wikidata.org/wiki/Q165> ;
     iop:hasProperty 
-        <http://qudt.org/vocab/quantitykind/Velocity> ;
+        <https://www.wikidata.org/wiki/Q11465> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "relative to instrument" ;
-             iop:constrains <http://qudt.org/vocab/quantitykind/Velocity> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q11465> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "at the surface" ;
-             iop:constrains <http://vocab.nerc.ac.uk/collection/S21/current/S21S027/> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q15324> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "positive away from the instrument" ;
-             iop:constrains <http://qudt.org/vocab/quantitykind/Velocity> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q11465> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "radial" ;
-             iop:constrains <http://qudt.org/vocab/quantitykind/Velocity> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q11465> ;
         ] .
 
-<http://vocab.nerc.ac.uk/collection/S29/current/PE001307/>
+<https://www.wikidata.org/wiki/Q5195029>
     a 
         iop:Entity ;
     rdfs:label 
         "water current" .
 
-<http://vocab.nerc.ac.uk/collection/S21/current/S21S027/>
+<https://www.wikidata.org/wiki/Q15324>
     a 
         iop:Entity ;
     rdfs:label 
         "water body" .
 
-<http://qudt.org/vocab/quantitykind/Velocity>
+<https://www.wikidata.org/wiki/Q11465>
     a 
         iop:Property ;
     rdfs:label 
         "velocity" .
 
-<http://opendata.inrae.fr/thesaurusINRAE/c_1384>
+<https://www.wikidata.org/wiki/Q165>
     a 
         iop:Entity ;
     rdfs:label 
