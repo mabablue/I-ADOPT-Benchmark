@@ -9,8 +9,12 @@ ex:Variable
         iop:Variable ;
     rdfs:label 
         "VART_QC Variance quality flag" ;
-    rdfs:comment 
+    skos:definition 
         """QC flags labelling surface velocity vectors whose temporal variance is smaller than a maximum variance threshold with a “good data” flag. Otherwise, the vectors are labelled with a “bad data” flag. This test is applicable only to Beam Forming (BF) systems. Data files from Direction Finding (DF) systems will apply instead the “Temporal Derivative” test""" ;
+    rdfs:comment "HCSS Radial velocity variance of water current, quality flag, good if under threshold value" ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP12.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP82.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP90.yaml> ;
     iop:hasObjectOfInterest 
         ex:OoI ;
     iop:hasProperty 
