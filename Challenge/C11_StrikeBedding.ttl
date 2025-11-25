@@ -4,6 +4,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
 
 ex:C11
     a 
@@ -16,8 +17,8 @@ ex:C11
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP25.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP30.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP73.yaml> ;
-    iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q2248079> ;
+iop:hasObjectOfInterest 
+        _:b0 ;
     iop:hasMatrix 
         <https://www.wikidata.org/wiki/Q82480> ;
     iop:hasProperty 
@@ -28,7 +29,7 @@ ex:C11
              iop:constrains <https://www.wikidata.org/wiki/Q124274> ;
         ] .
 
-<https://www.wikidata.org/wiki/Q2248079>
+_:b0
     a 
         iop:Entity ,
         iop:SymmetricSystem ;
