@@ -12,12 +12,12 @@ ex:someVar
     rdfs:label 
         "HCSS Radial velocity variance of water current relative to instrument  in the water body by high frequency radar" ;
     skos:definition 
-        """Variance of the component of water velocity in a water body along radial lines centered at the HFR antenna, evaluated over the coverage period""" ;
-    rdfs:comment "water current, water body, at the surface, variance, over the temporal coverage period, sea, velocity, relative to instrument, radial" ;
+        """Radial velocity variance of water current relative to instrument  in the water body by high frequency radar""" ;
+    rdfs:comment "water current; water body; at the surface; variance; over the temporal coverage period; sea; velocity; relative to instrument; radial" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP13.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP31.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP40.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP61.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP65.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP78.yaml> ;
     iop:hasObjectOfInterest 
