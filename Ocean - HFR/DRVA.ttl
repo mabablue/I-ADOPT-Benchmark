@@ -13,7 +13,7 @@ ex:RadVelDirHF
         "DRVA Direction of radial velocity of water current relative to instrument and to True North by high frequency radar" ;
     skos:definition 
         """The compass direction in degrees positive clockwise from TrueNorth of the component of water velocity in a water body along radial lines centered at the HFR antenna.""" ;
-    rdfs:comment "RDVA radial velocity (away from) of water current related to instrument, plane angle, relative to True North" ;
+    rdfs:comment "RDVA radial velocity (away from) of water current related to instrument, plane angle, relative to True North -> datum: relative to True North" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP68.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP90.yaml> ;
@@ -23,7 +23,7 @@ ex:RadVelDirHF
         <https://www.wikidata.org/wiki/Q2849635> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "relative to True North" ;
+             rdfs:label "datum: relative to True North" ;
              iop:constrains <https://www.wikidata.org/wiki/Q2849635> ;
         ] .
 
