@@ -11,7 +11,7 @@ ex:concvar
     rdfs:label 
         "Iron concentration in a soil sample by colorimetric analysis using ortho-phenanthroline" ;
     skos:definition 
-        """Iron(II) solution derived from a soil sample (via digestion and dilution) using a quantitative reaction with o-phenantroline and product color measurement of absorbance at 510 nm""" ;
+        """Iron(II) solution derived from a soil sample (via digestion and dilution) using a quantitative reaction with ortho-phenantroline and product color measurement of absorbance at 510 nm""" ;
     rdfs:comment 
         """Iron(II) solution --> iron + acqueous; soil sample; o-phenantroline;at 510 nm-> at 510 nm wavelength""" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP17.yaml> ;
