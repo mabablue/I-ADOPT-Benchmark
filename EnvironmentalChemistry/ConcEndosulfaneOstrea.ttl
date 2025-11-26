@@ -18,17 +18,18 @@ ex:EC1
     iopp:Pattern
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP17.yaml> ;
     iopp:Pattern
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP79.yaml> ;
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP76.yaml> ;
     iopp:Pattern
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP30.yaml> ;
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP31.yaml> ;
     iopp:Pattern
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP40.yaml> ;
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
     iopp:Pattern
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP76.yaml> ;
     iopp:Pattern
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP71.yaml> ;
+    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/89> ;
     iop:hasObjectOfInterest 
-        _:b0 ;
+        <http://vocab.nerc.ac.uk/collection/S27/current/CS003625/> ;
     iop:hasMatrix 
         <https://www.wikidata.org/wiki/Q170494> ;
     iop:hasContextObject 
@@ -41,11 +42,11 @@ ex:EC1
              iop:constrains <https://www.wikidata.org/wiki/Q589446> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "wet" ;
+             rdfs:label "state:wet" ;
              iop:constrains <https://www.wikidata.org/wiki/Q170494> ;
         ] .
 
-_:b0
+<http://vocab.nerc.ac.uk/collection/S27/current/CS003625/>
     a 
         iop:Entity ;
     rdfs:label 
