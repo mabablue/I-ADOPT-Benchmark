@@ -14,7 +14,7 @@ ex:C8
     rdfs:comment "coarse woody debris, abundance -> area fraction, ADD: ground" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP15.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP35.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP33.yaml> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q2069734> ;
     iop:hasMatrix 
