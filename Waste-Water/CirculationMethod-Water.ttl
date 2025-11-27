@@ -26,11 +26,15 @@ ex:Circulation-Method-in-Tube
     iop:hasMatrix 
         <https://www.wikidata.org/wiki/Q41551> ;
     iop:hasProperty 
-        iop:CirculationMethod ;
+                _:b0 ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "type: canalisation" ;
              iop:constrains <https://www.wikidata.org/wiki/Q41551> ;
+        ] , 
+        [ a iop:Constraint ;
+             rdfs:label "controlled list: water circulation method" ;
+             iop:constrains _:b0 ;
         ] .
 
 <https://www.wikidata.org/wiki/Q283>
@@ -45,7 +49,7 @@ ex:Circulation-Method-in-Tube
     rdfs:label 
         "Pipe" .
 
-iop:CirculationMethod
+_:b0
     a 
         iop:Property ;
     rdfs:label 
