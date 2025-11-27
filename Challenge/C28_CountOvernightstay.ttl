@@ -19,9 +19,11 @@ ex:C28
     rdfs:comment
         """nights; hotel; number; location: near the sea shore; type: 3 star""";
     iop:pattern 
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP61.yaml> ;
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP65.yaml> ;
     iop:pattern 
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
+    ex:issue
+        <https://github.com/mabablue/I-ADOPT-examples-playground/issues/34> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q575> ;
     iop:hasMatrix 
