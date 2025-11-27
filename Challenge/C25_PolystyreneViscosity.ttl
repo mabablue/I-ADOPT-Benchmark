@@ -24,6 +24,8 @@ ex:C25
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP65.yaml> ;
     iop:pattern 
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
+    ex:issue
+        <https://github.com/mabablue/I-ADOPT-examples-playground/issues/31> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q146243> ;
     iop:hasProperty 
