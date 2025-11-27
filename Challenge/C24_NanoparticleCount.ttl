@@ -24,6 +24,8 @@ ex:C24
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP30.yaml> ;
     iop:pattern 
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
+    ex:issue
+        <https://github.com/mabablue/I-ADOPT-examples-playground/issues/30> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q967847> ;
     iop:hasMatrix 
