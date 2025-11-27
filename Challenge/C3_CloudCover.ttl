@@ -17,6 +17,8 @@ ex:C3
         """sky, cloud, (amount covered -> area fraction)""" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP15.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP33.yaml> ;
+    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/9> 
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q8074> ;
     iop:hasMatrix 
