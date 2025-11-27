@@ -15,6 +15,7 @@ ex:C10
     rdfs:comment "ground, maximum, acceleration, due to: seismic event, surface -> location: surface" ;
 	iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
 	iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP72.yaml> ;
+    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/16> ;
 	iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q36133> ;
     iop:hasStatisticalModifier 
