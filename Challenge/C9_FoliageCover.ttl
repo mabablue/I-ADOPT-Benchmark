@@ -14,8 +14,10 @@ ex:C9
         """The proportion (percentage) of the ground area covered by foliage (or photosynthetic tissue) in the lower canopy strata.""" ;
     rdfs:comment "foliage, lower canopy strata, ground, cover -> area fraction";
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP15.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP33.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP69.yaml> ;
+    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/15> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q18250160> ;
     iop:hasMatrix 
