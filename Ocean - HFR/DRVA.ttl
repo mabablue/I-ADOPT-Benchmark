@@ -18,6 +18,7 @@ ex:RadVelDirHF
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP68.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP90.yaml> ;
+    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/62> ;
     iop:hasObjectOfInterest 
         <http://example.org/iadopt/RDVA_variable> ;
     iop:hasProperty 
