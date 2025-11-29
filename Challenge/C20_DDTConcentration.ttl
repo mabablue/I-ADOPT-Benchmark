@@ -21,47 +21,54 @@ ex:C20
     iop:pattern 
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP21.yaml> ;
     iop:pattern 
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP30.yaml> ;
-    iop:pattern 
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP71.yaml> ;
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP34.yaml> ;
     iop:pattern 
         <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP72.yaml> ;
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP75.yaml> ;
+    iop:pattern 
+        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP91.yaml> ;
     ex:issue
-        <https://github.com/mabablue/I-ADOPT-examples-playground/issues/26> ;
+        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/26" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q163648> ;
-    iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q36133> ;
+        _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q899138> ;
+        <https://www.wikidata.org/wiki/Q66055> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "temporal extent: 1 year" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q899138> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "normalization: per unit mass" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q899138> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q66055> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "due to: industry" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q163648> ;
+             iop:constrains _:b1 ;
         ] .
 
-<https://www.wikidata.org/wiki/Q163648>
+_:b0
     a 
-        iop:Entity ;
+        iop:Entity ,
+        iop:AsymmetricSystem ;
     rdfs:label 
-        "DDT" .
+        "DDT/soil mass" ;
+    iop:hasNumerator 
+        _:b1 ;
+    iop:hasDenominator 
+        _:b2 .
 
-<https://www.wikidata.org/wiki/Q36133>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "soil" .
-
-<https://www.wikidata.org/wiki/Q899138>
+<https://www.wikidata.org/wiki/Q66055>
     a 
         iop:Property ;
     rdfs:label 
-        "mass fraction" .
+        "fraction" .
+
+_:b1
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "mass of DDT" .
+
+_:b2
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "mass of soil" .
