@@ -11,9 +11,9 @@ ex:combvar
     rdfs:label 
         "estimation of the energy of reaction upon combustion of hexanol" ;
     skos:definition 
-        """energy released upon combustion of 99.98%(w/w) pure hexanol in air at atmospheric pressure and atmospheric oxygen level.""" ;
+        """energy released upon combustion of 99.98(w/w) pure hexanol in air at atmospheric pressure and atmospheric oxygen level.""" ;
     rdfs:comment 
-        """energy; combustion-> combustion reaction; 99.98%(w/w) pure; hexanol; air""" ;
+        """energy; combustion-> combustion reaction; 99.98(w/w) pure; hexanol; air""" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP35.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP41.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
@@ -30,7 +30,7 @@ ex:combvar
         <https://www.wikidata.org/wiki/Q7391292> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "quality: purity 99.98%(w/w)" ;
+             rdfs:label "quality: purity 99.98(w/w)" ;
              iop:constrains <https://www.wikidata.org/wiki/Q76933> ;
         ] ,
         [ a iop:Constraint ;
