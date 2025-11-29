@@ -11,9 +11,9 @@ ex:densvar
     rdfs:label 
         "density of benzene" ;
     skos:definition 
-        """mass density of a 10.00 mL sample of ACS reagent grade (99.0 %(v/v) benzene at a room temperature""" ;
+        """mass density of a 10.00 mL sample of ACS reagent grade (99.0 (v/v)) benzene at a room temperature""" ;
     rdfs:comment 
-        """mass density; 10.00 mL sample; ACS reagent grade (99.0 %(v/v); benzene; at a room temperature""" ;
+        """mass density; 10.00 mL sample; ACS reagent grade (99.0 (v/v)); benzene; at a room temperature""" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP63.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
@@ -33,7 +33,7 @@ ex:densvar
              iop:constrains <https://www.wikidata.org/wiki/Q2270> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "quality: ACS reagent grade (99.0%(v/v))" ;
+             rdfs:label "quality: ACS reagent grade (99.0 (v/v))" ;
              iop:constrains <https://www.wikidata.org/wiki/Q2270> ;
         ] .
 
