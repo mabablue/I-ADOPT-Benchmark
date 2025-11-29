@@ -1,0 +1,51 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+
+ex:FloodRiskMobility
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Flood risk index related to mobility and accessibility " ;
+    rdfs:comment 
+        """Flood risk index related to mobility and accessibility when streets around the houses are flooded""" ;
+    iop:hasObjectOfInterest 
+        _:b0 ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/wiki/Q3409269> ;
+    iop:hasProperty 
+        _:b1 ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "condition: streets around the houses are flooded" ;
+             iop:constrains _:b0 ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q3409269> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "type: mobility and accessibility" ;
+             iop:constrains _:b0 ;
+        ] .
+
+_:b0
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "flood risk" .
+
+<https://www.wikidata.org/wiki/Q3409269>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "statistical unit" .
+
+_:b1
+    a 
+        iop:Property ;
+    rdfs:label 
+        "index" .
