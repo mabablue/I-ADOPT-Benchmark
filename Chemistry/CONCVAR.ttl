@@ -15,7 +15,7 @@ ex:concvar
     rdfs:comment 
         """molarity -> molar concentration; iron(II); soil""" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP30.yaml> ;
-    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/80> ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/80" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q428946> ;
     iop:hasMatrix 
