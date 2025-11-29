@@ -20,14 +20,14 @@ ex:combvar
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP84.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP75.yaml> ;
     ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/81> ;
-    rdfs:comment 
-        """energy released (or taken in) upon quanitiative combustion of a 5.00 g sample of 99.98%(w/w) pure hexanol in air""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q76933> ;
     iop:hasMatrix 
         <https://www.wikidata.org/wiki/Q133235> ;
     iop:hasProperty 
         <https://www.wikidata.org/wiki/Q11379> ;
+    iop:hasContextObject
+        <https://www.wikidata.org/wiki/Q7391292> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "quality: purity 99.98%(w/w)" ;
@@ -63,3 +63,9 @@ ex:combvar
         iop:Property ;
     rdfs:label 
         "energy" .
+
+<https://www.wikidata.org/wiki/Q7391292> 
+   a
+      iop:Entity ;
+  rdfs:label
+       "air" . 
