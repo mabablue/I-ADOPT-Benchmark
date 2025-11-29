@@ -11,9 +11,9 @@ ex:mpvar
     rdfs:label 
         "melting point of naphthalene under standard conditions" ;
     skos:definition 
-        """thermodynamic temperature for the melting point (at the solid to liquid phase transition) of a known purity (99.12% (w/w)) sample of naphthalene at atmospheric pressure""" ;
+        "thermodynamic temperature for the melting point (at the solid to liquid phase transition) of a known purity (99.12% (w/w)) sample of naphthalene at atmospheric pressure" ;
     rdfs:comment 
-        """thermodynamic temperature; at the solid to liquid phase transition; purity (99.12% (w/w)); naphthalene; at atmospheric pressure""" ;
+        "thermodynamic temperature; at the solid to liquid phase transition; purity (99.12% (w/w)); naphthalene; at atmospheric pressure" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP75.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP84.yaml> ;
