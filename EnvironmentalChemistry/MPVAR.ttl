@@ -10,21 +10,15 @@ ex:mpvar
         iop:Variable ;
     rdfs:label 
         "melting point of naphthalene under standard conditions" ;
-    skos:definition 
-        """thermodynamic temperature for the melting point of a known purity (99.12% (w/w)) solid sample of naphthalene under standarding""" ;
     rdfs:comment 
-        """thermodynamic temperature; melting point; purity (99.12% (w/w)); naphthalene;  under standarding -> at 1 atm pressure""" ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP84.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP85.yaml> ;
-    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/79> ;
+        """thermodynamic temperature for the melting point of a known purity (99.12% (w/w)) solid sample of naphthalene under standarding""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q179724> ;
     iop:hasProperty 
         <https://www.wikidata.org/wiki/Q264647> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "condition: at the solid to liquid phase transition" ;
+             rdfs:label "temporal extent: at the solid to liquid phase transition" ;
              iop:constrains <https://www.wikidata.org/wiki/Q264647> ;
         ] ,
         [ a iop:Constraint ;
@@ -32,7 +26,7 @@ ex:mpvar
              iop:constrains <https://www.wikidata.org/wiki/Q179724> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "requirement: at 1 atm pressure" ;
+             rdfs:label "condition: at 1 atm pressure" ;
              iop:constrains <https://www.wikidata.org/wiki/Q264647> ;
         ] .
 
