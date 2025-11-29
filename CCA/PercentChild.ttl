@@ -1,0 +1,60 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+
+ex:PercentChild
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Percentage of number of children" ;
+    rdfs:comment 
+        """Percentage of number of children under 10 years versus total number of people dwelling in the buildings within a statistical unit which is defined as a grouping of homogeneous neighboring building blocks""" ;
+    iop:hasObjectOfInterest 
+        _:b0 ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/wiki/Q3409269> ;
+    iop:hasProperty 
+        <https://www.wikidata.org/wiki/Q11229> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q3409269> ;
+        ] .
+
+_:b0
+    a 
+        iop:Entity ,
+        iop:AsymmetricSystem ;
+    rdfs:label 
+        "number of children under 10 years / number of total people dwelling in the buildings" ;
+    iop:hasNumerator 
+        _:b1 ;
+    iop:hasDenominator 
+        _:b2 .
+
+<https://www.wikidata.org/wiki/Q3409269>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "statistical unit" .
+
+<https://www.wikidata.org/wiki/Q11229>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "percentage" .
+
+_:b1
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "number of children under 10 years" .
+
+_:b2
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "number of persons dwelling in the buildings" .
