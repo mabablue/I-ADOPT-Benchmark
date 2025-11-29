@@ -13,7 +13,7 @@ ex:C18
         "Biological sex" ;
     skos:definition 
         """Biological sex [female | male | intersex | unknown]""" ;
-    rdfs:comment "organism, ADD: sex, biological sex -> controlled list: biological sex" ;
+    rdfs:comment "organism, ADD: sex, biological sex" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP12.yaml> ;
     ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/24> ;
     iop:hasObjectOfInterest 
