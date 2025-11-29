@@ -19,7 +19,6 @@ ex:State-of-tube
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP63.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP64.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP83.yaml> ;
     ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/1> ; 
     iop:hasObjectOfInterest 
         ex:PipeConnection ;
