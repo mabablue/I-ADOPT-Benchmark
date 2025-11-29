@@ -3,14 +3,19 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
 ex:concvar
     a 
         iop:Variable ;
     rdfs:label 
         "determination of iron concentration in a soil sample by colorimetric analysis using ortho-phenanthroline" ;
-    rdfs:comment 
+    skos:definition 
         """molarity of iron(II) derived from a soil sample (via acid digestion and dilution) using a colorimetric reaction with o-phenanthroline and measurement of absorbance at 510 nm""" ;
+    rdfs:comment 
+        """molarity -> molar concentration; iron(II); soil""" ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP30.yaml> ;
+    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/80> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q428946> ;
     iop:hasMatrix 
