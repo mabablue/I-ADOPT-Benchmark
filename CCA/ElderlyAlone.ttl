@@ -24,6 +24,10 @@ ex:ElderlyAlone
              iop:constrains <https://www.wikidata.org/wiki/Q1358789> ;
         ] ,
         [ a iop:Constraint ;
+             rdfs:label "condition: age over 65 years" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q1358789> ;
+        ] ,
+        [ a iop:Constraint ;
              rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
              iop:constrains <https://www.wikidata.org/wiki/Q3409269> ;
         ] .
