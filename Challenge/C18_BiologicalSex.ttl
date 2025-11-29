@@ -15,17 +15,11 @@ ex:C18
         """Biological sex [female | male | intersex | unknown]""" ;
     rdfs:comment "organism, ADD: sex, biological sex -> controlled list: biological sex" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP12.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP83.yaml> ;
     ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/24> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q7239> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q290> ;
-    iop:hasConstraint 
-        [ a iop:Constraint ;
-             rdfs:label "controlled list: biological sex" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q290> ;
-        ] .
+        <https://www.wikidata.org/wiki/Q290> .
 
 <https://www.wikidata.org/wiki/Q7239>
     a 
