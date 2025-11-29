@@ -17,7 +17,6 @@
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP17.yaml> ;
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP40.yaml> ;
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
-    iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP71.yaml> ;
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP79.yaml> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q627> ;
@@ -28,10 +27,6 @@
     iop:hasProperty 
         <https://www.wikidata.org/wiki/Q672821> ;
     iop:hasConstraint 
-        [ a iop:Constraint ;
-             rdfs:label "normalization: per unit mass" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q672821> ;
-        ] ,
         [ a iop:Constraint ;
              rdfs:label "origin: detrital organic matter" ;
              iop:constrains <https://www.wikidata.org/wiki/Q627> ;
