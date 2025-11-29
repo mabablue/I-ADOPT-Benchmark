@@ -11,7 +11,7 @@ ex:bpvar
     rdfs:label 
         "boiling point of benzene" ;
     rdfs:comment 
-        """measurement of the thermodynamic temperature (or temperature range) for the transformation of a known purity (99.07% (v/v)) liquid sample of benzene into a gas at atmospheric pressure""" ;
+        """measurement of the thermodynamic temperature (or temperature range) for the transformation of a known purity 99.07 liquid sample of benzene into a gas at atmospheric pressure""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q2270> ;
     iop:hasProperty 
