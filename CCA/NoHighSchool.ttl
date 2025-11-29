@@ -1,0 +1,59 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+
+ex:NoHighSchool
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Average number of persons without high school diploma during the last 3 years within a statistical unit" ;
+    rdfs:comment 
+        """Average number of persons without high school diploma during the last 3 years in a statistical unit which is defined as a grouping of homogeneous neighboring building blocks""" ;
+    iop:hasObjectOfInterest 
+        <https://www.wikidata.org/wiki/Q215627> ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/wiki/Q3409269> ;
+    iop:hasStatisticalModifier 
+        <https://www.wikidata.org/wiki/Q2796622> ;
+    iop:hasProperty 
+        <https://www.wikidata.org/wiki/Q11563> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "condition: without high school diploma" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q215627> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q3409269> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "aggregation: last three years" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q2796622> ;
+        ] .
+
+<https://www.wikidata.org/wiki/Q215627>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "person" .
+
+<https://www.wikidata.org/wiki/Q3409269>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "statistical unit" .
+
+<https://www.wikidata.org/wiki/Q2796622>
+    a 
+        iop:StatisticalModifier ;
+    rdfs:label 
+        "mean" .
+
+<https://www.wikidata.org/wiki/Q11563>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "number" .
