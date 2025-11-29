@@ -19,7 +19,7 @@ ex:combvar
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP84.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP75.yaml> ;
-    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/81> ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/81" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q76933> ;
     iop:hasMatrix 
