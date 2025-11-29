@@ -1,0 +1,47 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+
+ex:ElderlyAlone
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Number of elderly people living alone in a statistical unit" ;
+    rdfs:comment 
+        """number of elderly people living alone in a statistical unit which is defined as a grouping of homogeneous neighboring building blocks""" ;
+    iop:hasObjectOfInterest 
+        <https://www.wikidata.org/wiki/Q1358789> ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/wiki/Q3409269> ;
+    iop:hasProperty 
+        <https://www.wikidata.org/wiki/Q11563> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "condition: living alone" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q1358789> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q3409269> ;
+        ] .
+
+<https://www.wikidata.org/wiki/Q1358789>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "elderly person" .
+
+<https://www.wikidata.org/wiki/Q3409269>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "statistical unit" .
+
+<https://www.wikidata.org/wiki/Q11563>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "number" .
