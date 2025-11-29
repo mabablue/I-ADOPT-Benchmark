@@ -1,0 +1,47 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+
+<http://example.org/iadopt/CCA/PluvialFlood>
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Pluvial flood due to 100 year event" ;
+    rdfs:comment 
+        """Pluvial flood due to 100 year event expressed as water depth caused by rainfall of 36 mm/h in a statistical unit, defined by a grouping of homogeneous neighboring building blocks""" ;
+    iop:hasObjectOfInterest 
+        <https://www.wikidata.org/wiki/Q283> ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/wiki/Q3409269> ;
+    iop:hasProperty 
+        <https://www.wikidata.org/wiki/Q930412> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q3409269> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "due to: 36 mm/h rainfall" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q283> ;
+        ] .
+
+<https://www.wikidata.org/wiki/Q283>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "water" .
+
+<https://www.wikidata.org/wiki/Q3409269>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "statistical unit" .
+
+<https://www.wikidata.org/wiki/Q930412>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "depth" .
