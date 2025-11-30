@@ -15,16 +15,30 @@ ex:C3
         """The amount of sky estimated to be covered by all cloud types.""" ;
     rdfs:comment
         """sky, cloud, (amount covered -> area fraction)""" ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP15.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP33.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP21.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP26.yaml> ;
     ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/9> ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q8074> ;
-    iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q527> ;
+        _:b0 ;
     iop:hasProperty 
-        _:b0 .
+        _:b1 .
+
+_:b0
+    a 
+        iop:Entity ,
+        iop:AsymmetricSystem ;
+    rdfs:label 
+        "area/reference area" ;
+    iop:hasNumerator 
+        <https://www.wikidata.org/wiki/Q8074> ;
+    iop:hasDenominator 
+        <https://www.wikidata.org/wiki/Q527> .
+
+_:b1
+    a 
+        iop:Property ;
+    rdfs:label 
+        "area fraction" .
 
 <https://www.wikidata.org/wiki/Q8074>
     a 
@@ -37,9 +51,3 @@ ex:C3
         iop:Entity ;
     rdfs:label 
         "sky" .
-
-_:b0
-    a 
-        iop:Property ;
-    rdfs:label 
-        "area fraction" .
