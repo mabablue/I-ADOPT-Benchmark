@@ -12,15 +12,16 @@ ex:C19
     rdfs:label 
         "Weight specific-ingestion Carbon rate at 15 °C" ;
     skos:definition 
-        """The amount of carbon consumed by an organism at non-limiting concentration of food relative to the individual dry weight measured at 15°C. It is expressed as μg C mg DW−1 h−1""" ;
-    rdfs:comment "Carbon, at non-limiting conditions -> condition: under non-limiting food conditions, from food to organism, food, organism, dry -> state: dry, mass flow rate, weight-specific -> normalization: per mass, at 15°C temperature -> condition: at 15°C temperature, due to: ingestion" ;
+        """Weight specific-ingestion Carbon rate at 15 °C. The amount of carbon consumed by an organism at non-limiting concentration of food relative to the individual dry weight measured at 15°C. It is expressed as μg C mg DW−1 h−1""" ;
+    rdfs:comment "Carbon, at non-limiting conditions -> condition: under non-limiting food conditions, food, organism, dry; mass flow rate; at 15°C temperature; ingestion ADD: ratio: mass per time" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP18.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP20.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP34.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP71.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP72.yaml> ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP76.yaml> ;
-    ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/25> ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/25" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q623> ;
     iop:hasMatrix 
@@ -29,7 +30,7 @@ ex:C19
         <https://www.wikidata.org/wiki/Q1366187> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "normalization: per time" ;
+             rdfs:label "ratio: mass per time" ;
              iop:constrains <https://www.wikidata.org/wiki/Q1366187> ;
         ] ,
         [ a iop:Constraint ;
@@ -41,11 +42,11 @@ ex:C19
              iop:constrains <https://www.wikidata.org/wiki/Q623> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "condition: at 15°C temperature" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q1366187> ;
+             rdfs:label "due to: ingestion" ;
+             iop:constrains _:b0 ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "due to: ingestion" ;
+             rdfs:label "condition: at 15° C temperature" ;
              iop:constrains <https://www.wikidata.org/wiki/Q1366187> ;
         ] .
 
@@ -60,7 +61,7 @@ _:b0
         iop:Entity ,
         iop:AsymmetricSystem ;
     rdfs:label 
-        "from food to organism" ;
+        "flow" ;
     iop:hasSource 
         <https://www.wikidata.org/wiki/Q2095> ;
     iop:hasTarget 
