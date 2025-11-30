@@ -13,8 +13,8 @@ ex:C8
     skos:definition """Coarse woody debris abundance (m2/hectare)""" ;
     rdfs:comment "coarse woody debris, abundance -> area fraction, ADD: ground" ;
     iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP15.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP33.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP21.yaml> ;
+    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP26.yaml> ;
     ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/14> ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q2069734> ;
