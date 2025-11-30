@@ -33,7 +33,7 @@ ex:C24
     iop:hasMatrix 
         <https://www.wikidata.org/wiki/Q20088819> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q11563> ;
+        <https://www.wikidata.org/wiki/Q108914965> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "location: intracellular" ;
@@ -41,7 +41,7 @@ ex:C24
         ] ,
         [ a iop:Constraint ;
              rdfs:label "ratio: number per area" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q11563> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q108914965> ;
         ] .
 
 _:b0
@@ -61,11 +61,11 @@ _:b0
     rdfs:label 
         "group of cells" .
 
-<https://www.wikidata.org/wiki/Q11563>
+<https://www.wikidata.org/wiki/Q108914965>
     a 
         iop:Property ;
     rdfs:label 
-        "number" .
+        "areal number density" .
 
 <https://www.wikidata.org/wiki/Q967847>
     a 
