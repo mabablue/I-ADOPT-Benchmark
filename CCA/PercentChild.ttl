@@ -4,6 +4,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 ex:PercentChild
     a 
@@ -22,6 +25,18 @@ ex:PercentChild
         [ a iop:Constraint ;
              rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
              iop:constrains <https://www.wikidata.org/wiki/Q3409269> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "ratio: number per number" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q11229> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "condition: age under 10 years" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q7569> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "condition: living in the housing" ;
+             iop:constrains _:b0 ;
         ] .
 
 _:b0
@@ -29,11 +44,11 @@ _:b0
         iop:Entity ,
         iop:AsymmetricSystem ;
     rdfs:label 
-        "number of children under 10 years / number of total people dwelling in the buildings" ;
+        "ratio" ;
     iop:hasNumerator 
-        _:b1 ;
+        <https://www.wikidata.org/wiki/Q7569> ;
     iop:hasDenominator 
-        _:b2 .
+        <https://www.wikidata.org/wiki/Q22947> .
 
 <https://www.wikidata.org/wiki/Q3409269>
     a 
@@ -47,14 +62,14 @@ _:b0
     rdfs:label 
         "percentage" .
 
-_:b1
+<https://www.wikidata.org/wiki/Q7569>
     a 
         iop:Entity ;
     rdfs:label 
-        "number of children under 10 years" .
+        "child" .
 
-_:b2
+<https://www.wikidata.org/wiki/Q22947>
     a 
         iop:Entity ;
     rdfs:label 
-        "number of persons dwelling in the buildings" .
+        "inhabitant" .
