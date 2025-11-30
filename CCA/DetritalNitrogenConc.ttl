@@ -18,15 +18,18 @@
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP40.yaml> ;
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
     iop:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP79.yaml> ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/88" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q627> ;
-    iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q180184> ;
+        _:b0 ;
     iop:hasContextObject 
         <https://www.wikidata.org/wiki/Q165> ;
     iop:hasProperty 
         <https://www.wikidata.org/wiki/Q672821> ;
     iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "ratio: mole per mass" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q672821> ;
+        ] ,
         [ a iop:Constraint ;
              rdfs:label "origin: detrital organic matter" ;
              iop:constrains <https://www.wikidata.org/wiki/Q627> ;
@@ -35,6 +38,29 @@
              rdfs:label "location: seabed" ;
              iop:constrains <https://www.wikidata.org/wiki/Q180184> ;
         ] .
+
+_:b0
+    a 
+        iop:Entity ,
+        iop:AsymmetricSystem ;
+    rdfs:label 
+        "ratio" ;
+    iop:hasNumerator 
+        <https://www.wikidata.org/wiki/Q627> ;
+    iop:hasDenominator 
+        <https://www.wikidata.org/wiki/Q180184> .
+
+<https://www.wikidata.org/wiki/Q672821>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "molarity" .
+
+<https://www.wikidata.org/wiki/Q165>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "sea" .
 
 <https://www.wikidata.org/wiki/Q627>
     a 
@@ -47,15 +73,3 @@
         iop:Entity ;
     rdfs:label 
         "sediment" .
-
-<https://www.wikidata.org/wiki/Q672821>
-    a 
-        iop:Property ;
-    rdfs:label 
-        "molar concentration" .
-
-<https://www.wikidata.org/wiki/Q165>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "sea" .
