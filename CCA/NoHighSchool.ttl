@@ -4,6 +4,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 ex:NoHighSchool
     a 
@@ -17,7 +20,7 @@ ex:NoHighSchool
     iop:hasMatrix 
         <https://www.wikidata.org/wiki/Q3409269> ;
     iop:hasStatisticalModifier 
-        <https://www.wikidata.org/wiki/Q2796622> ;
+        <https://www.wikidata.org/wiki/Q19033> ;
     iop:hasProperty 
         <https://www.wikidata.org/wiki/Q11563> ;
     iop:hasConstraint 
@@ -31,7 +34,7 @@ ex:NoHighSchool
         ] ,
         [ a iop:Constraint ;
              rdfs:label "aggregation: last three years" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q2796622> ;
+             iop:constrains <https://www.wikidata.org/wiki/Q19033> ;
         ] .
 
 <https://www.wikidata.org/wiki/Q215627>
@@ -46,11 +49,11 @@ ex:NoHighSchool
     rdfs:label 
         "statistical unit" .
 
-<https://www.wikidata.org/wiki/Q2796622>
+<https://www.wikidata.org/wiki/Q19033>
     a 
         iop:StatisticalModifier ;
     rdfs:label 
-        "mean" .
+        "arithmetic mean" .
 
 <https://www.wikidata.org/wiki/Q11563>
     a 
