@@ -14,44 +14,33 @@ ex:concvar
         """molarity of iron(II) derived from a soil sample (via acid digestion and dilution) using a colorimetric reaction with o-phenanthroline and measurement of absorbance at 510 nm""" ;
     rdfs:comment 
         """molarity -> molar concentration; iron(II); soil""" ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP17.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP26.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP71.yaml> ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/80" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q672821> ;
-    iop:hasConstraint 
-        [ a iop:Constraint ;
-             rdfs:label "ratio: mole per volume" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q672821> ;
-        ] .
-
+        <https://www.entitydata.org/entity/Q672821> .
 _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    rdfs:label 
-        "ratio" ;
     iop:hasNumerator 
-        <https://www.wikidata.org/wiki/Q428946> ;
+        <https://www.entitydata.org/entity/Q677> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/wiki/Q36133> .
+        <https://www.entitydata.org/entity/Q36133> .
 
-<https://www.wikidata.org/wiki/Q672821>
+<https://www.entitydata.org/entity/Q672821>
     a 
         iop:Property ;
     rdfs:label 
         "molarity" .
 
-<https://www.wikidata.org/wiki/Q428946>
+<https://www.entitydata.org/entity/Q677>
     a 
         iop:Entity ;
     rdfs:label 
         "iron(II)" .
 
-<https://www.wikidata.org/wiki/Q36133>
+<https://www.entitydata.org/entity/Q36133>
     a 
         iop:Entity ;
     rdfs:label 
