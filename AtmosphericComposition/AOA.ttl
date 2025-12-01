@@ -1,0 +1,46 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+
+ex:AOA
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Aircraft Angle of Attack." ;
+    rdfs:comment 
+        """Aircraft Angle of Attack measured in degrees. The angle at which a straight line from the leading edge to the training edge of an aircraft’s wing meets the relative wind. """ ;
+   ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/104" ;
+    iop:hasObjectOfInterest 
+        _:b0 ;
+    iop:hasProperty 
+        _:b1 .
+
+_:b0
+    a 
+        iop:Entity ,
+        iop:SymmetricSystem ;
+    iop:hasPart 
+        _:b2 ,
+        _:b3 .
+
+_:b1
+    a 
+        iop:Property ;
+    rdfs:label 
+        "angle of attack" .
+
+_:b2
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "chord line" .
+
+_:b3
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "relative wind direction" .
