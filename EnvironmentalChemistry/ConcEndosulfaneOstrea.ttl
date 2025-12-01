@@ -13,58 +13,28 @@ ex:EC1
     skos:definition 
         """Mass concentration of endosulfane sulfate in wet flesh of ostrea edulis, measured in μg/kg.""" ;
     rdfs:comment
-        """Mass concentration; endosulfane sulfate; wet; flesh->body; ostrea edulis; ADD: normalization: per unit mass.""" ;
-    iopp:Pattern
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP17.yaml> ;
-    iopp:Pattern
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP76.yaml> ;
-    iopp:Pattern
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP31.yaml> ;
-    iopp:Pattern
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
-    iopp:Pattern
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP76.yaml> ;
-    iopp:Pattern
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP71.yaml> ;
+        """Mass concentration; endosulfane sulfate; wet; flesh->body; ostrea edulis; ADD: ratio: mass per  mass.""" ;
     ex:issue <https://github.com/mabablue/I-ADOPT-examples-playground/issues/89> ;
     iop:hasObjectOfInterest 
         _:b0 ;
-    iop:hasContextObject 
+    iop:hasMatrix 
         <https://www.wikidata.org/wiki/Q729678> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q11423> ;
+        <https://www.wikidata.org/wiki/Q899138> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "normalization: per unit mass" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q11423> ;
-        ] ,
-        [ a iop:Constraint ;
              rdfs:label "state:wet" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q170494> ;
-        ]  .
+             iop:constrains <https://www.wikidata.org/wiki/Q13119823> ;
+        ] .
 
 _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    rdfs:label 
-        "substance/body" ;
     iop:hasNumerator 
         <http://vocab.nerc.ac.uk/collection/S27/current/CS003625/> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/wiki/Q170494> .
-
-<https://www.wikidata.org/wiki/Q170494>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "body" .
-
-<https://www.wikidata.org/wiki/Q11423>
-    a 
-        iop:Property ;
-    rdfs:label 
-        "mass" .
+        <https://www.wikidata.org/wiki/Q13119823> .
 
 <https://www.wikidata.org/wiki/Q729678>
     a 
@@ -72,8 +42,20 @@ _:b0
     rdfs:label 
         "ostrea edulis" .
 
+<https://www.wikidata.org/wiki/Q899138>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "mass fraction" .
+
 <http://vocab.nerc.ac.uk/collection/S27/current/CS003625/>
     a 
         iop:Entity ;
     rdfs:label 
         "endosulfane sulfate" .
+
+<https://www.wikidata.org/wiki/Q13119823>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "flesh" .
