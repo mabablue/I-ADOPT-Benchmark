@@ -1,0 +1,60 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+
+ex:SulfateAerosol
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Sulfate organic nitrate in aerosol particles" ;
+    rdfs:comment 
+        """Number fraction of aerosol particles from 0.1 um to larger than 1 um that are identified as sulfate-organic-nitrate internal mixtures.""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/101" ;
+    iop:hasObjectOfInterest 
+        _:b0 ;
+    iop:hasProperty 
+        <https://www.wikidata.org/wiki/Q11229> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "size: 0.1 µm to larger than 1 µm" ;
+             iop:constrains _:b0 ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "composition: Sulfate-organic-nitrate " ;
+             iop:constrains <https://www.wikidata.org/wiki/Q23392> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "quantity: total" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q8104> ;
+        ] .
+
+_:b0
+    a 
+        iop:Entity ,
+        iop:AsymmetricSystem ;
+    iop:hasNumerator 
+        <https://www.wikidata.org/wiki/Q23392> ;
+    iop:hasDenominator 
+        <https://www.wikidata.org/wiki/Q8104> .
+
+<https://www.wikidata.org/wiki/Q11229>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "number fraction" .
+
+<https://www.wikidata.org/wiki/Q23392>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "aerosol particle" .
+
+<https://www.wikidata.org/wiki/Q8104>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "aerosol particle" .
