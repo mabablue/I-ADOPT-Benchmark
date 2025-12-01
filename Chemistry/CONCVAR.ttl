@@ -18,29 +18,29 @@ ex:concvar
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.entitydata.org/entity/Q672821> .
+        <https://www.wikidata.org/entity/Q672821> .
 _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
     iop:hasNumerator 
-        <https://www.entitydata.org/entity/Q677> ;
+        <https://www.wikidata.org/entity/Q677> ;
     iop:hasDenominator 
-        <https://www.entitydata.org/entity/Q36133> .
+        <https://www.wikidata.org/entity/Q36133> .
 
-<https://www.entitydata.org/entity/Q672821>
+<https://www.wikidata.org/entity/Q672821>
     a 
         iop:Property ;
     rdfs:label 
         "molarity" .
 
-<https://www.entitydata.org/entity/Q677>
+<https://www.wikidata.org/entity/Q677>
     a 
         iop:Entity ;
     rdfs:label 
         "iron(II)" .
 
-<https://www.entitydata.org/entity/Q36133>
+<https://www.wikidata.org/entity/Q36133>
     a 
         iop:Entity ;
     rdfs:label 
