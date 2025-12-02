@@ -1,0 +1,67 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+
+<http://example.org/iadopt/AtmosphericComposition/RadDown>
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Surface long-wave (thermal) radiation downwards (2D)" ;
+    rdfs:comment 
+        """Surface long-wave (thermal) radiation downwards measured in J m**-2""" ;
+    iop:hasObjectOfInterest 
+        <https://www.wikidata.org/wiki/Q11379> ;
+    iop:hasMatrix 
+        ex:Matrix ;
+    iop:hasProperty 
+        <https://www.wikidata.org/wiki/Q18335> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "location: at the surface" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q2> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "type: downwards" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q18335> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "type: long-wave" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q18335> ;
+        ] .
+
+<https://www.wikidata.org/wiki/Q11379>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "energy" .
+
+ex:Matrix
+    a 
+        iop:Entity ,
+        iop:AsymmetricSystem ;
+    rdfs:label 
+        "flow" ;
+    iop:hasTarget 
+        <https://www.wikidata.org/wiki/Q2> ;
+    iop:hasSource 
+        <https://www.wikidata.org/wiki/Q8104> .
+
+<https://www.wikidata.org/wiki/Q18335>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "radiation" .
+
+<https://www.wikidata.org/wiki/Q2>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "earth" .
+
+<https://www.wikidata.org/wiki/Q8104>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "atmosphere" .
