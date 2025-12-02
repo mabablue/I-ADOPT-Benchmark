@@ -16,56 +16,60 @@
         """Labile; detrital -> detrital organic material; nitrogen; concentration -> molar concentration; seabed; sediment; sea""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/88" ;
     iop:hasObjectOfInterest 
-        _:b0 ;
+        <https://www.wikidata.org/entity/Q5203615> ;
     iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q165> ;
+        _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q672821> ;
+        <https://www.wikidata.org/entity/Q1366187> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "origin: detrital organic matter" ;
-             iop:constrains <https://www.wikidata.org/entity/Q627> ;
+             rdfs:label "due to: metabolism" ;
+             iop:constrains _:b0 ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "state: labile" ;
-             iop:constrains <https://www.wikidata.org/entity/Q627> ;
+             rdfs:label "type: ectotherm" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q7239> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "location: seabed" ;
-             iop:constrains <https://www.wikidata.org/entity/Q180184> ;
+             rdfs:label "condition: non-stressed" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q7239> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "state: non-active" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q7239> ;
         ] .
+
+<https://www.wikidata.org/entity/Q5203615>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "oxygen" .
 
 _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
     rdfs:label 
-        "bc_0_b21_b0" ;
-    iop:hasNumerator 
-        <https://www.wikidata.org/entity/Q627> ;
-    iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q180184> .
+        "flow" ;
+    iop:hasSource 
+        <https://www.wikidata.org/wiki/Q7391292> ;
+    iop:hasTarget 
+        <https://www.wikidata.org/wiki/Q7239> .
 
-<https://www.wikidata.org/entity/Q165>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "sea" .
-
-<https://www.wikidata.org/entity/Q672821>
+<https://www.wikidata.org/entity/Q1366187>
     a 
         iop:Property ;
     rdfs:label 
-        "molarity" .
+        "mass flow rate" .
 
-<https://www.wikidata.org/entity/Q627>
+<https://www.wikidata.org/wiki/Q7391292>
     a 
         iop:Entity ;
     rdfs:label 
-        "nitrogen" .
+        "air" .
 
-<https://www.wikidata.org/entity/Q180184>
+<https://www.wikidata.org/wiki/Q7239>
     a 
         iop:Entity ;
     rdfs:label 
-        "sediment" .
+        "organism" .
