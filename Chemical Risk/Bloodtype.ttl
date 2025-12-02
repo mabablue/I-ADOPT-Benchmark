@@ -1,0 +1,45 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+
+<http://example.org/iadopt/healthcare/familyactivity>
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Observation of bloodtype in blood" ;
+    skos:definition 
+        """Type of blood in a blood sample""" ;
+    rdfs:comment
+        "blood; patient; clood type" ;
+    ex:isuue
+        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/117" ;
+    iop:hasObjectOfInterest 
+        <https://www.wikidata.org/entity/Q7873> ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/entity/Q181600> ;
+    iop:hasProperty 
+        <https://www.wikidata.org/entity/Q47657> .
+
+<https://www.wikidata.org/entity/Q7873>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "blood" .
+
+<https://www.wikidata.org/entity/Q181600>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "patient" .
+
+<https://www.wikidata.org/entity/Q47657>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "blood type" .
