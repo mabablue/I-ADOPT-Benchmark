@@ -4,13 +4,13 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
 
-ex:someVar
+<http://example.org/meteo/PMER>
     a 
         iop:Variable ;
     rdfs:label 
-        "some example variable" ;
+        "Mean sea level pressure" ;
     rdfs:comment 
-        """used to illustrate the capabilities of the I-Adopt Visualizer""" ;
+        """Mean sea level pressure expressed in Pa""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/wiki/Q8104> ;
     iop:hasStatisticalModifier 
