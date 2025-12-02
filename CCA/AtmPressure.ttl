@@ -1,0 +1,42 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+
+ex:someVar
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "some example variable" ;
+    rdfs:comment 
+        """used to illustrate the capabilities of the I-Adopt Visualizer""" ;
+    iop:hasObjectOfInterest 
+        <https://www.wikidata.org/wiki/Q8104> ;
+    iop:hasStatisticalModifier 
+        <https://www.wikidata.org/wiki/Q2796622> ;
+    iop:hasProperty 
+        <https://www.wikidata.org/wiki/Q39552> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "location: sea level" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q8104> ;
+        ] .
+
+<https://www.wikidata.org/wiki/Q8104>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "atmosphere" .
+
+<https://www.wikidata.org/wiki/Q2796622>
+    a 
+        iop:StatisticalModifier ;
+    rdfs:label 
+        "mean" .
+
+<https://www.wikidata.org/wiki/Q39552>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "pressure" .
