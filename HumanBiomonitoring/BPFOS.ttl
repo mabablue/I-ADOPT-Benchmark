@@ -1,0 +1,57 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+
+<http://example.org/HB/BPFOS>
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Percentage Branched Perfluorooctane sulfonic acid (BPFOS)" ;
+    rdfs:comment 
+        """Percentage Branched Perfluorooctane sulfonic acid in blood """ ;
+    iop:hasObjectOfInterest 
+        _:b0 ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/wiki/Q5> ;
+    iop:hasProperty 
+        <https://www.wikidata.org/wiki/Q1907514> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "condition: branched isomers" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q902094> ;
+        ] .
+
+_:b0
+    a 
+        iop:Entity ,
+        iop:AsymmetricSystem ;
+    iop:hasNumerator 
+        <https://www.wikidata.org/wiki/Q902094> ;
+    iop:hasDenominator 
+        <https://www.wikidata.org/wiki/Q7873> .
+
+<https://www.wikidata.org/wiki/Q5>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "person" .
+
+<https://www.wikidata.org/wiki/Q1907514>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "percentage" .
+
+<https://www.wikidata.org/wiki/Q902094>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "Perfluorooctane sulfonic acid" .
+
+<https://www.wikidata.org/wiki/Q7873>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "blood" .
