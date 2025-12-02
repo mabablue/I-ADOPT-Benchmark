@@ -18,62 +18,48 @@ ex:C24
         """the amount of the applied dose of nanomaterial - particle number per cell area - that has been internalised by a cell population (or per specific cell)""" ;
     rdfs:comment
         """nanomaterial; cell membrane; number; location: intracellular; normalization: per area; ADD: particle number per cell area""" ;
-    iop:pattern 
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP14.yaml> ;
-    iop:pattern 
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP26.yaml> ;
-    iop:pattern 
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP67.yaml> ;
-    iop:pattern 
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP71.yaml> ;
     ex:issue
         "https://github.com/mabablue/I-ADOPT-examples-playground/issues/30" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q20088819> ;
+        <https://www.wikidata.org/entity/Q20088819> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q108914965> ;
+        <https://www.wikidata.org/entity/Q108914965> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "location: intracellular" ;
              iop:constrains _:b0 ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "ratio: number per area" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q108914965> ;
         ] .
 
 _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    rdfs:label 
-        "ratio" ;
     iop:hasNumerator 
-        <https://www.wikidata.org/wiki/Q967847> ;
+        <https://www.wikidata.org/entity/Q967847> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/wiki/Q54888819> .
+        <https://www.wikidata.org/entity/Q54888819> .
 
-<https://www.wikidata.org/wiki/Q20088819>
+<https://www.wikidata.org/entity/Q20088819>
     a 
         iop:Entity ;
     rdfs:label 
         "group of cells" .
 
-<https://www.wikidata.org/wiki/Q108914965>
+<https://www.wikidata.org/entity/Q108914965>
     a 
         iop:Property ;
     rdfs:label 
         "areal number density" .
 
-<https://www.wikidata.org/wiki/Q967847>
+<https://www.wikidata.org/entity/Q967847>
     a 
         iop:Entity ;
     rdfs:label 
         "nanomaterial" .
 
-<https://www.wikidata.org/wiki/Q54888819>
+<https://www.wikidata.org/entity/Q54888819>
     a 
         iop:Entity ;
     rdfs:label 
