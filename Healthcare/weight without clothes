@@ -28,11 +28,7 @@
              iop:constrains <https://www.wikidata.org/entity/Q181600> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "time: current" ;
-             iop:constrains <https://www.wikidata.org/entity/Q11423> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "conditional: if pregnant, last weight before pregnancy" ;
+             rdfs:label "time: last unpregnant" ;
              iop:constrains <https://www.wikidata.org/entity/Q11423> ;
         ] .
 
