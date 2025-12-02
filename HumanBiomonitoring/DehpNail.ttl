@@ -13,6 +13,8 @@
         """Mass ratio in dehp in nail""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/wiki/Q5> ;
     iop:hasProperty 
         <https://www.wikidata.org/wiki/Q1563068> .
 
@@ -25,6 +27,12 @@ _:b0
     iop:hasDenominator 
         <https://www.wikidata.org/wiki/Q36864> .
 
+<https://www.wikidata.org/wiki/Q5>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "person" .
+
 <https://www.wikidata.org/wiki/Q1563068>
     a 
         iop:Property ;
@@ -35,7 +43,7 @@ _:b0
     a 
         iop:Entity ;
     rdfs:label 
-        "dehp" .
+        "diethylhexyl phthalate " .
 
 <https://www.wikidata.org/wiki/Q36864>
     a 
