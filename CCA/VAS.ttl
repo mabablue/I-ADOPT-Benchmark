@@ -1,0 +1,38 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+
+<http://example.org/meteo/VAS>
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Northward Near-Surface Wind" ;
+    rdfs:comment 
+        """Northward Near-Surface Wind (v-component), measured in m s⁻¹""" ;
+    iop:hasObjectOfInterest 
+        <https://www.wikidata.org/wiki/Q8094> ;
+    iop:hasProperty 
+        <https://www.wikidata.org/wiki/Q3711325> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "location: near surface" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q8094> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "type: northward" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q8094> ;
+        ] .
+
+<https://www.wikidata.org/wiki/Q8094>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "wind" .
+
+<https://www.wikidata.org/wiki/Q3711325>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "speed" .
