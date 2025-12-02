@@ -18,14 +18,10 @@ ex:C22
         """Smoking status current of a patient""" ;
     rdfs:comment 
         """patient; smoking status;  time: current""" ;
-    iop:pattern 
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP12.yaml> ;
-    iop:pattern 
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP78.yaml> ;
     ex:issue
-        <https://github.com/mabablue/I-ADOPT-examples-playground/issues/28> ;
+        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/28" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q181600> ;
+        <https://www.wikidata.org/entity/Q181600> ;
     iop:hasProperty 
         _:b0 ;
     iop:hasConstraint 
@@ -34,7 +30,7 @@ ex:C22
              iop:constrains _:b0 ;
         ] .
 
-<https://www.wikidata.org/wiki/Q181600>
+<https://www.wikidata.org/entity/Q181600>
     a 
         iop:Entity ;
     rdfs:label 
