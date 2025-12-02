@@ -16,7 +16,7 @@
     skos:definition 
         """BPM mean heart rate (beats per minute, ECG-derived)""" ;    
     rdfs:comment 
-        """contractions; patient; mean; frequency; type: heart""" ;
+        """contractions; patient; mean; frequency; type: heart; ADD:patient""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/105" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q127006> ;
