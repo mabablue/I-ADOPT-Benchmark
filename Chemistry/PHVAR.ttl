@@ -14,26 +14,24 @@ ex:phvar
         """pH of a sample of apple juice using a solid-state pH electrode""" ;
     rdfs:comment 
         """pH; apple juice; ADD: hydronium ion activity""" ;
-    iopp: <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
-    iopp: <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP85.yaml> ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/87" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q618355> ;
+        <https://www.wikidata.org/entity/Q618355> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q40936> ;
+        <https://www.wikidata.org/entity/Q40936> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "defined by: hydronium ion activity" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q40936> ;
+             iop:constrains <https://www.wikidata.org/entity/Q40936> ;
         ] .
 
-<https://www.wikidata.org/wiki/Q618355>
+<https://www.wikidata.org/entity/Q618355>
     a 
         iop:Entity ;
     rdfs:label 
         "apple juice" .
 
-<https://www.wikidata.org/wiki/Q40936>
+<https://www.wikidata.org/entity/Q40936>
     a 
         iop:Property ;
     rdfs:label 
