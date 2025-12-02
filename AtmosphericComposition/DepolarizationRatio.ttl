@@ -17,7 +17,7 @@ ex:DepolarizationRatio
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q11229> ;
+        <https://www.wikidata.org/entity/Q11229> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "by: parallel-polarized channel" ;
@@ -37,7 +37,7 @@ _:b0
     iop:hasDenominator 
         _:b1 .
 
-<https://www.wikidata.org/wiki/Q11229>
+<https://www.wikidata.org/entity/Q11229>
     a 
         iop:Property ;
     rdfs:label 
