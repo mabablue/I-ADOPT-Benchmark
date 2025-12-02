@@ -1,0 +1,44 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+
+<http://example.org/HB/DehpNail>
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Mass ratio of dehp in nail" ;
+    rdfs:comment 
+        """Mass ratio in dehp in nail""" ;
+    iop:hasObjectOfInterest 
+        _:b0 ;
+    iop:hasProperty 
+        <https://www.wikidata.org/wiki/Q1563068> .
+
+_:b0
+    a 
+        iop:Entity ,
+        iop:AsymmetricSystem ;
+    iop:hasNumerator 
+        <https://www.wikidata.org/wiki/Q418492> ;
+    iop:hasDenominator 
+        <https://www.wikidata.org/wiki/Q36864> .
+
+<https://www.wikidata.org/wiki/Q1563068>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "mass ratio" .
+
+<https://www.wikidata.org/wiki/Q418492>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "dehp" .
+
+<https://www.wikidata.org/wiki/Q36864>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "nail" .
