@@ -14,35 +14,32 @@ ex:bpvar
         """thermodynamic temperature for the boiling point (at the liquid to gas phase transition) of a known purity 99.07 (w/w) liquid sample of benzene at atmospheric pressure""" ;
     rdfs:comment 
         "thermodynamic temperature; at the liquid to gas phase transition; purity 99.07 (w/w); benzene; at atmospheric pressure" ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP75.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP84.yaml> ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/78" ; 
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q2270> ;
+        <https://www.wikidata.org/entity/Q2270> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q264647> ;
+        <https://www.wikidata.org/entity/Q264647> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "temporal extent: liquid to gas phase transition" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q264647> ;
+             iop:constrains <https://www.wikidata.org/entity/Q264647> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "condition: at 1 atm pressure" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q264647> ;
+             iop:constrains <https://www.wikidata.org/entity/Q264647> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "quality: purity 99.07 (w/w)" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q2270> ;
+             iop:constrains <https://www.wikidata.org/entity/Q2270> ;
         ] .
 
-<https://www.wikidata.org/wiki/Q2270>
+<https://www.wikidata.org/entity/Q2270>
     a 
         iop:Entity ;
     rdfs:label 
         "benzene" .
 
-<https://www.wikidata.org/wiki/Q264647>
+<https://www.wikidata.org/entity/Q264647>
     a 
         iop:Property ;
     rdfs:label 
