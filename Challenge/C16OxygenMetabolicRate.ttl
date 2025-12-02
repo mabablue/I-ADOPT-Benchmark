@@ -14,42 +14,36 @@ ex:C16
     skos:definition 
         """The measure of an ectotherm animal's baseline metabolic rate (i.e. non-active, non-stressed) measured by the milligrams of oxygen consumed in a period of time of one hour.""" ;
     rdfs:comment "oxygen, from air to organism, MassFlowRate -> mass flow rate, due to: metabolism, air, organism, ectotherm -> type: ectotherm, non-stressed -> condition: non-stressed, non-active -> state: non-active, ADD: ratio: mass per time" ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP20.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP65.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP71.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP72.yaml> ;
-    iopp:pattern <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP76.yaml> ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/22" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q5203615> ;
+        <https://www.wikidata.org/entity/Q5203615> ;
     iop:hasMatrix 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q1366187> ;
+        <https://www.wikidata.org/entity/Q1366187> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "ratio: mass per time" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q1366187> ;
+             iop:constrains <https://www.wikidata.org/entity/Q1366187> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "type: ectotherm" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q7239> ;
+             iop:constrains <https://www.wikidata.org/entity/Q7239> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "condition: non-stressed" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q7239> ;
+             iop:constrains <https://www.wikidata.org/entity/Q7239> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "state: non-active" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q7239> ;
+             iop:constrains <https://www.wikidata.org/entity/Q7239> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "due to: metabolism" ;
              iop:constrains _:b0 ;
         ] .
 
-<https://www.wikidata.org/wiki/Q5203615>
+<https://www.wikidata.org/entity/Q5203615>
     a 
         iop:Entity ;
     rdfs:label 
@@ -62,23 +56,23 @@ _:b0
     rdfs:label 
         "flow" ;
     iop:hasNumerator 
-        <https://www.wikidata.org/wiki/Q7391292> ;
+        <https://www.wikidata.org/entity/Q7391292> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/wiki/Q7239> .
+        <https://www.wikidata.org/entity/Q7239> .
 
-<https://www.wikidata.org/wiki/Q1366187>
+<https://www.wikidata.org/entity/Q1366187>
     a 
         iop:Property ;
     rdfs:label 
         "mass flow rate" .
 
-<https://www.wikidata.org/wiki/Q7391292>
+<https://www.wikidata.org/entity/Q7391292>
     a 
         iop:Entity ;
     rdfs:label 
         "air" .
 
-<https://www.wikidata.org/wiki/Q7239>
+<https://www.wikidata.org/entity/Q7239>
     a 
         iop:Entity ;
     rdfs:label 
