@@ -1,0 +1,69 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+
+<http://example.org/iadopt/env/SurfRunoff>
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Daily Maximum Hourly Precipitation Rate" ;
+    rdfs:comment 
+        """Daily Maximum Hourly Precipitation Rate, measured in kg m⁻² s⁻¹""" ;
+    iop:hasObjectOfInterest 
+        _:b0 ;
+    iop:hasStatisticalModifier 
+        _:b1 ;
+    iop:hasProperty 
+        <https://www.wikidata.org/wiki/Q55753416> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "origin: rain" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q283> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "aggregation: daily" ;
+             iop:constrains _:b1 ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "aggregation: hourly" ;
+             iop:constrains _:b1 ;
+        ] .
+
+_:b0
+    a 
+        iop:Entity ,
+        iop:AsymmetricSystem ;
+    iop:hasNumerator 
+        <https://www.wikidata.org/wiki/Q283> ;
+    iop:hasDenominator 
+        _:b2 .
+
+_:b1
+    a 
+        iop:StatisticalModifier ;
+    rdfs:label 
+        "maximum" .
+
+<https://www.wikidata.org/wiki/Q55753416>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "volume flux" .
+
+<https://www.wikidata.org/wiki/Q283>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "water" .
+
+_:b2
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "ground" .
