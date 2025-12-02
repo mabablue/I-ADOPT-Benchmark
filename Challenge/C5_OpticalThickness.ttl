@@ -16,30 +16,20 @@ ex:C5
         """Atmospheric optical thickness of particulate organic matter at 550nm under ambient conditions.""" ;
     rdfs:comment
         """Atmospheric, optical thickness, particulate matter, organic, 550nm, under ambient conditions.""" ;
-    iopp:pattern
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP1.yaml> ;
-    iopp:pattern
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP10.yaml> ;
-    iopp:pattern
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP30.yaml> ;
-    iopp:pattern
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP65.yaml> ;
-    iopp:pattern
-        <https://github.com/mabablue/I-ADOPT-patterns-playground/blob/main/pattern/VDP70.yaml> ;
     ex:issue
-        <https://github.com/mabablue/I-ADOPT-examples-playground/issues/11> ;
+        "https://github.com/mabablue/I-ADOPT-examples-playground/issues/11" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q104541> ;
+        <https://www.wikidata.org/entity/Q104541> ;
     iop:hasContextObject 
-        <https://www.wikidata.org/wiki/Q8104> ;
+        <https://www.wikidata.org/entity/Q8104> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q890809> ;
+        <https://www.wikidata.org/entity/Q890809> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: at 550nm wavelength" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q890809> ;
+             iop:constrains <https://www.wikidata.org/entity/Q890809> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "type: organic" ;
@@ -47,7 +37,7 @@ ex:C5
         ] ,
         [ a iop:Constraint ;
              rdfs:label "condition: under ambient conditions" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q104541> ;
+             iop:constrains <https://www.wikidata.org/entity/Q104541> ;
         ] .
 
 _:b0
@@ -56,19 +46,19 @@ _:b0
     rdfs:label 
         "particles of matter" .
 
-<https://www.wikidata.org/wiki/Q104541>
+<https://www.wikidata.org/entity/Q104541>
     a 
         iop:Entity ;
     rdfs:label 
         "aerosol" .
 
-<https://www.wikidata.org/wiki/Q890809>
+<https://www.wikidata.org/entity/Q890809>
     a 
         iop:Property ;
     rdfs:label 
         "optical thickness" .
 
-<https://www.wikidata.org/wiki/Q8104>
+<https://www.wikidata.org/entity/Q8104>
     a 
         iop:Entity ;
     rdfs:label 
