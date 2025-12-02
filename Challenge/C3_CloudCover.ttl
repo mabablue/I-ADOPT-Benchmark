@@ -26,9 +26,9 @@ _:b0
         iop:Entity ,
         iop:AsymmetricSystem ;
     iop:hasDenominator 
-        <https://www.wikidata.org/wiki/Q527> ;
+        <https://www.wikidata.org/entity/Q527> ;
     iop:hasNumerator 
-        <https://www.wikidata.org/wiki/Q8074> .
+        <https://www.wikidata.org/entity/Q8074> .
 
 <http://www.ontology-of-units-of-measure.org/resource/om-2/AreaFraction>
     a 
@@ -36,13 +36,13 @@ _:b0
     rdfs:label 
         "area fraction" .
 
-<https://www.wikidata.org/wiki/Q527>
+<https://www.wikidata.org/entity/Q527>
     a 
         iop:Entity ;
     rdfs:label 
         "sky" .
 
-<https://www.wikidata.org/wiki/Q8074>
+<https://www.wikidata.org/entity/Q8074>
     a 
         iop:Entity ;
     rdfs:label 
