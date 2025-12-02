@@ -19,34 +19,34 @@
         """pain; patient; grade; temporal extent: chronic; controlled list: scale""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/108" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q81938> ;
+        <https://www.wikidata.org/entity/Q81938> ;
     iop:hasContextObject 
-        <https://www.wikidata.org/wiki/Q181600> ;
+        <https://www.wikidata.org/entity/Q181600> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q18185> ;
+        <https://www.wikidata.org/entity/Q18185> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "temporal extent: chronic" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q81938> ;
+             iop:constrains <https://www.wikidata.org/entity/Q81938> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "controlled list: scale" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q18185> ;
+             iop:constrains <https://www.wikidata.org/entity/Q18185> ;
         ] .
 
-<https://www.wikidata.org/wiki/Q81938>
+<https://www.wikidata.org/entity/Q81938>
     a 
         iop:Entity ;
     rdfs:label 
         "pain" .
 
-<https://www.wikidata.org/wiki/Q18185>
+<https://www.wikidata.org/entity/Q18185>
     a 
         iop:Property ;
     rdfs:label 
         "grade" .
 
-<https://www.wikidata.org/wiki/Q181600>
+<https://www.wikidata.org/entity/Q181600>
     a 
         iop:Entity ;
     rdfs:label 
