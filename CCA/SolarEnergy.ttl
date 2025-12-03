@@ -1,0 +1,46 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+
+<http://example.org/CCA/SolarEnergy>
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Solar energy production of building per month" ;
+    rdfs:comment 
+        """Solar energy production of building in kWh""" ;
+    iop:hasObjectOfInterest 
+        _:b0 ;
+    iop:hasMatrix 
+        _:b1 ;
+    iop:hasProperty 
+        _:b2 ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "origin: photovoltaik panel" ;
+             iop:constrains _:b0 ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "time extent: month" ;
+             iop:constrains _:b2 ;
+        ] .
+
+_:b0
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "energy" .
+
+_:b1
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "building" .
+
+_:b2
+    a 
+        iop:Property ;
+    rdfs:label 
+        "amount" .
