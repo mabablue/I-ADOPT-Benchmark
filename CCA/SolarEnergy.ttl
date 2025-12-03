@@ -23,7 +23,7 @@
              iop:constrains _:b0 ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "time extent: month" ;
+             rdfs:label "temporal extent: month" ;
              iop:constrains _:b2 ;
         ] .
 
