@@ -1,0 +1,46 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+
+<http://example.org/CCA/Turbidity>
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Water turbidity of stagnant surface water " ;
+    rdfs:comment 
+        """Water turbidity of stagnant surface water """ ;
+    iop:hasObjectOfInterest 
+        <https://www.wikidata.org/wiki/Q283> ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/wiki/Q15324> ;
+    iop:hasProperty 
+        <https://www.wikidata.org/wiki/Q898574> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "state: stagnant" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q15324> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "type: surface" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q283> ;
+        ] .
+
+<https://www.wikidata.org/wiki/Q283>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "water" .
+
+<https://www.wikidata.org/wiki/Q15324>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "water body" .
+
+<https://www.wikidata.org/wiki/Q898574>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "turbidity" .
