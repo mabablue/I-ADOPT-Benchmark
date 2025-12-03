@@ -3,44 +3,41 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
-@prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
-ex:concvar
+ex:someVar
     a 
         iop:Variable ;
     rdfs:label 
-        "determination of iron concentration in a soil sample by colorimetric analysis using ortho-phenanthroline" ;
-    skos:definition 
-        """molarity of iron(II) derived from a soil sample (via acid digestion and dilution) using a colorimetric reaction with o-phenanthroline and measurement of absorbance at 510 nm""" ;
+        "Determination of iron concentration in a soil sample" ;
     rdfs:comment 
-        """molarity -> molar concentration; iron(II); soil""" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/80" ;
+        """Determination of iron concentration in a soil sample by colorimetric analysis using ortho-phenanthroline as mass fraction""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q672821> .
+        <https://www.wikidata.org/wiki/Q899138> .
+
 _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
     iop:hasNumerator 
-        <https://www.wikidata.org/entity/Q677> ;
+        <https://www.wikidata.org/wiki/Q428946> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q36133> .
+        <https://www.wikidata.org/wiki/Q36133> .
 
-<https://www.wikidata.org/entity/Q672821>
+<https://www.wikidata.org/wiki/Q899138>
     a 
         iop:Property ;
     rdfs:label 
-        "molarity" .
+        "mass fraction" .
 
-<https://www.wikidata.org/entity/Q677>
+<https://www.wikidata.org/wiki/Q428946>
     a 
         iop:Entity ;
     rdfs:label 
         "iron(II)" .
 
-<https://www.wikidata.org/entity/Q36133>
+<https://www.wikidata.org/wiki/Q36133>
     a 
         iop:Entity ;
     rdfs:label 
