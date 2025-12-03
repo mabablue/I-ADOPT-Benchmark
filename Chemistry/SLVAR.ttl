@@ -10,29 +10,22 @@ ex:slvar
         iop:Variable ;
     rdfs:label 
         "solubility of naphthalene in water at room temperature" ;
-    skos:definition 
-        """solubility measurement of napathalene in deionized water at room temperature by monitoring absorption at 279 nm""" ;
     rdfs:comment 
-        """solubility; napathalene; deionized water; at room temperature; at 279 nm; """ ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/84" ;
+        """solubility measurement of napathalene in deionized water at room temperature by monitoring absorption at 279 nm, measured in mg/L""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q179724> ;
     iop:hasMatrix 
-        ex:Matrix ;
+        _:b0 ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q170731> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "state: solid phase" ;
+             rdfs:label "state: solid" ;
              iop:constrains <https://www.wikidata.org/entity/Q179724> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "state: dissolved" ;
              iop:constrains <https://www.wikidata.org/entity/Q179724> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "state: liquid phase" ;
-             iop:constrains <https://www.wikidata.org/entity/Q283> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "condition: at room temperature" ;
@@ -43,12 +36,12 @@ ex:slvar
              iop:constrains <https://www.wikidata.org/entity/Q170731> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "quality: dionized" ;
-             iop:constrains <https://www.wikidata.org/entity/Q283> ;
+             rdfs:label "state: at solid-liquid equilibrium" ;
+             iop:constrains _:b0 ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "state: at solid-liquid equilibrium" ;
-             iop:constrains ex:Matrix ;
+             rdfs:label "quality: dionized" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q283> ;
         ] .
 
 <https://www.wikidata.org/entity/Q179724>
@@ -57,25 +50,23 @@ ex:slvar
     rdfs:label 
         "naphthalene (C10H8)" .
 
-ex:Matrix
+_:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    rdfs:label 
-        "two-phase solid-liquid system" ;
     iop:hasSource 
         <https://www.wikidata.org/entity/Q179724> ;
     iop:hasTarget 
-        <https://www.wikidata.org/entity/Q283> .
+        <https://www.wikidata.org/entity/Q179724> .
 
 <https://www.wikidata.org/entity/Q170731>
     a 
         iop:Property ;
     rdfs:label 
-        "solubility" .
+        "mass concentration" .
 
-<https://www.wikidata.org/entity/Q283>
+<https://www.wikidata.org/wiki/Q283>
     a 
         iop:Entity ;
     rdfs:label 
-        "water (H2O)" .
+        "water" .
