@@ -12,7 +12,7 @@ ex:C24
     skos:definition 
         """ Number of particles internalised into the cell over the duration of the experiment""" ;
     rdfs:comment
-        """nanomaterial; cell membrane; number per cell; location: intracellular, duration of the experiment""" ;
+        """nanomaterial; cell membrane; number per cell; location: intracellular, duration of the experiment; ADD: group of cells""" ;
     ex:issue
         "https://github.com/mabablue/I-ADOPT-examples-playground/issues/30" ;
     iop:hasObjectOfInterest 
