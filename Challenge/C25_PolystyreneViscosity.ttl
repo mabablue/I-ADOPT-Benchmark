@@ -25,10 +25,6 @@ ex:C25
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q15152757> ;
     iop:hasConstraint 
-        [ a iop:Constraint ;
-             rdfs:label "type: PS042" ;
-             iop:constrains <https://www.wikidata.org/entity/Q146243> ;
-        ],
         [ a iop:Constraint ; 
             rdfs:label "condition: under testing conditions of DIN 5810-1" ;
             iop:constrains <https://www.wikidata.org/entity/Q15152757> ;
