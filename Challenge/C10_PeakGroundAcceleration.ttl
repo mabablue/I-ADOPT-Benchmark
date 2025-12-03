@@ -14,19 +14,21 @@ ex:C10
         """Peak acceleration measured on the earth surface when facing seismic events, like earthquakes.""" ;
     rdfs:comment "ground, maximum, acceleration, due to: seismic event, surface -> location: surface" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/16" ;
-	iop:hasObjectOfInterest 
+    iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q36133> ;
+    iop:hasMatrix 
+        <https://www.wikidata.org/entity/Q2> ;
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/entity/Q10578722> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q11376> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "surface" ;
+             rdfs:label "location: surface" ;
              iop:constrains <https://www.wikidata.org/entity/Q36133> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "due to seismic event" ;
+             rdfs:label "due to: seismic event" ;
              iop:constrains <https://www.wikidata.org/entity/Q11376> ;
         ] .
 
@@ -35,6 +37,12 @@ ex:C10
         iop:Entity ;
     rdfs:label 
         "ground" .
+
+<https://www.wikidata.org/entity/Q2>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "Earth" .
 
 <https://www.wikidata.org/entity/Q10578722>
     a 
