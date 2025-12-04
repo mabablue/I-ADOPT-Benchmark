@@ -19,19 +19,19 @@ ex:C19
     iop:hasMatrix 
         _:b1 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q3265048> ;
+        <hhttps://www.wikidata.org/entity/Q3265048> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "condition: at 15° C temperature" ;
-             iop:constrains <https://www.wikidata.org/entity/Q3265048> ;
+             rdfs:label "at 15°C temperature" ;
+             iop:constrains <hhttps://www.wikidata.org/entity/Q3265048> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "condition: at non-limiting conditions" ;
+             iop:constrains <https://www.wikidata.org/entity/Q2095> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "state: dry" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q7239> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "condition: at non-limiting amount" ;
-             iop:constrains <https://www.wikidata.org/entity/Q2095> ;
+             iop:constrains <https://www.wikidata.org/entity/Q795052> ;
         ] .
 
 _:b0
@@ -41,24 +41,22 @@ _:b0
     iop:hasNumerator 
         <https://www.wikidata.org/entity/Q623> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q7239> .
+        <https://www.wikidata.org/entity/Q795052> .
 
 _:b1
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    rdfs:label 
-        "bc_0_b23_b0" ;
     iop:hasSource 
         <https://www.wikidata.org/entity/Q2095> ;
     iop:hasTarget 
         <https://www.wikidata.org/entity/Q7239> .
 
-<https://www.wikidata.org/entity/Q3265048>
+<hhttps://www.wikidata.org/entity/Q3265048>
     a 
         iop:Property ;
     rdfs:label 
-        "mass flux" .
+        "mass flow rate" .
 
 <https://www.wikidata.org/entity/Q623>
     a 
@@ -66,11 +64,11 @@ _:b1
     rdfs:label 
         "Carbon" .
 
-<https://www.wikidata.org/entity/Q7239>
+<https://www.wikidata.org/entity/Q795052>
     a 
         iop:Entity ;
     rdfs:label 
-        "organism" .
+        "individual" .
 
 <https://www.wikidata.org/entity/Q2095>
     a 
