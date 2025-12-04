@@ -9,25 +9,26 @@
         iop:Variable ;
     rdfs:label 
         "Surface runoff" ;
-    rdfs:comment 
-        """Surface runoff measured in kg m⁻² s⁻¹""" ;
+    skos:definition "Surface runoff measured in kg m⁻² s⁻¹";
+    rdfs:comment "condition: not soaking into the ground, origin: rain, surface, atmosphere, mass flow, flow, water" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/123";
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q283> ;
+        <https://www.wikidata.org/entity/Q283> ;
     iop:hasMatrix 
         ex:Matrix ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q3295893> ;
+        <https://www.wikidata.org/entity/Q3295893> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: not soaking into the ground" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q484298> ;
+             iop:constrains <https://www.wikidata.org/entity/Q484298> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "origin: rain" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q283> ;
+             iop:constrains <https://www.wikidata.org/entity/Q283> ;
         ] .
 
-<https://www.wikidata.org/wiki/Q283>
+<https://www.wikidata.org/entity/Q283>
     a 
         iop:Entity ;
     rdfs:label 
@@ -40,23 +41,23 @@ ex:Matrix
     rdfs:label 
         "flow" ;
     iop:hasSource 
-        <https://www.wikidata.org/wiki/Q8104> ;
+        <https://www.wikidata.org/entity/Q8104> ;
     iop:hasTarget 
-        <https://www.wikidata.org/wiki/Q484298> .
+        <https://www.wikidata.org/entity/Q484298> .
 
-<https://www.wikidata.org/wiki/Q3295893>
+<https://www.wikidata.org/entity/Q3295893>
     a 
         iop:Property ;
     rdfs:label 
         "mass flow" .
 
-<https://www.wikidata.org/wiki/Q8104>
+<https://www.wikidata.org/entity/Q8104>
     a 
         iop:Entity ;
     rdfs:label 
         "atmosphere" .
 
-<https://www.wikidata.org/wiki/Q484298>
+<https://www.wikidata.org/entity/Q484298>
     a 
         iop:Entity ;
     rdfs:label 
