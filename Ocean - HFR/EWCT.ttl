@@ -32,6 +32,10 @@ ex:EWCT
         [ a iop:Constraint ;
              rdfs:label "location: at the surface" ;
              iop:constrains <https://www.wikidata.org/entity/Q15324> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "sign meaning: positive eastward" ;
+             iop:constrains <https://www.wikidata.org/entity/Q11465> ;
         ] .
 
 <https://www.wikidata.org/entity/Q5195029>
