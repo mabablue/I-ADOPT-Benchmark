@@ -12,7 +12,7 @@ ex:someVar
     rdfs:label 
         "ESPC Radial velocity (away from) standard deviation over the scatter patch of water current relative to instrument in the water body by high frequency radar" ;
     skos:definition
-        """Standard deviation of the radial velocity (away from) standard deviation over the scatter patch of water current relative to instrument in the water body by high frequency radar""" ;
+        """Standard deviation of the component of water velocity in a water body along radial lines centered at the HFR antenna, evaluated over the scatter patch""" ;
     rdfs:comment "water current; water body; at the surface; standard deviation; over the scatter patch; sea; velocity; radial; positive away from the instrument; relative to the instrument" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/67" ;
     iop:hasObjectOfInterest 
