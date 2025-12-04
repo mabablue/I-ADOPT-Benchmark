@@ -9,7 +9,7 @@
         iop:Variable ;
     rdfs:label 
         "Global fallout of U‑236 (U236GF)" ;
-    skos: "Global fallout of U‑236 (U236GF) in atoms kg-1";
+    skos:definition "Global fallout of U‑236 (U236GF) in atoms kg-1";
     rdfs:comment "location: global, condition: deposited, soil, Uranium‑236, atoms per mass" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/130";
     iop:hasObjectOfInterest 
