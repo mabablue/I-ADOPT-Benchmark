@@ -9,8 +9,9 @@
         iop:Variable ;
     rdfs:label 
         "Global fallout of U‑236 (U236GF)" ;
-    rdfs:comment 
-        """Global fallout of U‑236 (U236GF) in atoms kg-1""" ;
+    skos: "Global fallout of U‑236 (U236GF) in atoms kg-1";
+    rdfs:comment "location: global, condition: deposited, soil, Uranium‑236, atoms per mass" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/130";
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
@@ -22,7 +23,7 @@
         ] ,
         [ a iop:Constraint ;
              rdfs:label "condition: deposited" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q5955496> ;
+             iop:constrains <https://www.wikidata.org/entity/Q5955496> ;
         ] .
 
 _:b0
@@ -30,9 +31,9 @@ _:b0
         iop:Entity ,
         iop:AsymmetricSystem ;
     iop:hasNumerator 
-        <https://www.wikidata.org/wiki/Q5955496> ;
+        <https://www.wikidata.org/entity/Q5955496> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/wiki/Q36133> .
+        <https://www.wikidata.org/entity/Q36133> .
 
 _:b1
     a 
@@ -40,13 +41,13 @@ _:b1
     rdfs:label 
         "atoms per mass" .
 
-<https://www.wikidata.org/wiki/Q5955496>
+<https://www.wikidata.org/entity/Q5955496>
     a 
         iop:Entity ;
     rdfs:label 
         "Uranium‑236" .
 
-<https://www.wikidata.org/wiki/Q36133>
+<https://www.wikidata.org/entity/Q36133>
     a 
         iop:Entity ;
     rdfs:label 
