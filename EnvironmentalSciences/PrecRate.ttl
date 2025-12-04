@@ -9,27 +9,28 @@
         iop:Variable ;
     rdfs:label 
         "Daily maximum hourly precipitation rate" ;
-    rdfs:comment 
-        """Daily maximum hourly precipitation rate, measured in kg m⁻² s⁻¹""" ;
+    skos:definition "Daily maximum hourly precipitation rate, measured in kg m⁻² s⁻¹";
+    rdfs:comment "aggregation: hourly, aggregation: daily, ground, atmosphere, mass flux, maximum, vegetation-soil system, water" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/124";
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q283> ;
+        <https://www.wikidata.org/entity/Q283> ;
     iop:hasMatrix 
         ex:Matrix ;
     iop:hasStatisticalModifier 
-        <https://www.wikidata.org/wiki/Q10578722> ;
+        <https://www.wikidata.org/entity/Q10578722> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q3265048> ;
+        <https://www.wikidata.org/entity/Q3265048> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "aggregation: daily" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q10578722> ;
+             iop:constrains <https://www.wikidata.org/entity/Q10578722> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "aggregation: hourly" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q10578722> ;
+             iop:constrains <https://www.wikidata.org/entity/Q10578722> ;
         ] .
 
-<https://www.wikidata.org/wiki/Q283>
+<https://www.wikidata.org/entity/Q283>
     a 
         iop:Entity ;
     rdfs:label 
@@ -42,29 +43,29 @@ ex:Matrix
     rdfs:label 
         "vegetation-soil system" ;
     iop:hasSource 
-        <https://www.wikidata.org/wiki/Q8104> ;
+        <https://www.wikidata.org/entity/Q8104> ;
     iop:hasTarget 
-        <https://www.wikidata.org/wiki/Q36133> .
+        <https://www.wikidata.org/entity/Q36133> .
 
-<https://www.wikidata.org/wiki/Q10578722>
+<https://www.wikidata.org/entity/Q10578722>
     a 
         iop:StatisticalModifier ;
     rdfs:label 
         "maximum" .
 
-<https://www.wikidata.org/wiki/Q3265048>
+<https://www.wikidata.org/entity/Q3265048>
     a 
         iop:Property ;
     rdfs:label 
         "mass flux" .
 
-<https://www.wikidata.org/wiki/Q8104>
+<https://www.wikidata.org/entity/Q8104>
     a 
         iop:Entity ;
     rdfs:label 
         "atmosphere" .
 
-<https://www.wikidata.org/wiki/Q36133>
+<https://www.wikidata.org/entity/Q36133>
     a 
         iop:Entity ;
     rdfs:label 
