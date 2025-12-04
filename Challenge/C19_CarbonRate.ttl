@@ -20,7 +20,7 @@ ex:C19
     iop:hasMatrix 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q1366187> ;
+        <https://www.wikidata.org/entity/Q3265048> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "state: dry" ;
@@ -36,7 +36,7 @@ ex:C19
         ] ,
         [ a iop:Constraint ;
              rdfs:label "condition: at 15° C temperature" ;
-             iop:constrains <https://www.wikidata.org/entity/Q1366187> ;
+             iop:constrains <https://www.wikidata.org/entity/Q3265048> ;
         ] .
 
 <https://www.wikidata.org/entity/Q623>
@@ -49,18 +49,16 @@ _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    rdfs:label 
-        "flow" ;
     iop:hasSource 
         <https://www.wikidata.org/entity/Q2095> ;
     iop:hasTarget 
         <https://www.wikidata.org/entity/Q7239> .
 
-<https://www.wikidata.org/entity/Q1366187>
+<https://www.wikidata.org/entity/Q3265048>
     a 
         iop:Property ;
     rdfs:label 
-        "mass flow rate" .
+        "mass flux" .
 
 <https://www.wikidata.org/entity/Q2095>
     a 
