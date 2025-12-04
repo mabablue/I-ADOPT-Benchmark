@@ -20,7 +20,7 @@ iop:hasObjectOfInterest
         ex:Prop ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "threshold: under the threshold value" ;
+             rdfs:label "threshold: good if under the threshold value" ;
              iop:constrains ex:Prop ;
         ] .
 
