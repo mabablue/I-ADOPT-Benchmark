@@ -9,43 +9,44 @@
         iop:Variable ;
     rdfs:label 
         "Mass concentration of tbph in breast milk" ;
-    rdfs:comment 
-        """Mass concentration of tbph in breast milk""" ;
+    skos:definition "Mass concentration of tbph in breast milk";
+    rdfs:comment "breast milk, bis(2-ethylhexyl) tetrabromophthalate, mass concentration, person" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/127";
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
-        <https://www.wikidata.org/wiki/Q5> ;
+        <https://www.wikidata.org/entity/Q5> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q589446> .
+        <https://www.wikidata.org/entity/Q589446> .
 
 _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
     iop:hasNumerator 
-        <https://www.wikidata.org/wiki/Q19931407> ;
+        <https://www.wikidata.org/entity/Q19931407> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/wiki/Q22728> .
+        <https://www.wikidata.org/entity/Q22728> .
 
-<https://www.wikidata.org/wiki/Q5>
+<https://www.wikidata.org/entity/Q5>
     a 
         iop:Entity ;
     rdfs:label 
         "person" .
 
-<https://www.wikidata.org/wiki/Q589446>
+<https://www.wikidata.org/entity/Q589446>
     a 
         iop:Property ;
     rdfs:label 
         "mass concentration" .
 
-<https://www.wikidata.org/wiki/Q19931407>
+<https://www.wikidata.org/entity/Q19931407>
     a 
         iop:Entity ;
     rdfs:label 
         "bis(2-ethylhexyl) tetrabromophthalate " .
 
-<https://www.wikidata.org/wiki/Q22728>
+<https://www.wikidata.org/entity/Q22728>
     a 
         iop:Entity ;
     rdfs:label 
