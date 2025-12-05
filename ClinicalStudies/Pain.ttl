@@ -1,0 +1,54 @@
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <http://example.org/iadopt/challenge/> .
+
+
+<http://example.org/iadopt/clinical/Pain>
+    a 
+        iop:Variable ;
+    rdfs:label 
+        "Chronic pain grade scale" ;
+    skos:definition
+        """Category: Clinical, Unit: descriptional/grade of a scale""" ;
+    rdfs:comment 
+        """pain; person; ADD: role: patient; grade; temporal extent: chronic; controlled list: scale""" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/108" ;
+    iop:hasObjectOfInterest 
+        <https://www.wikidata.org/wiki/Q81938> ;
+    iop:hasContextObject 
+        <https://www.wikidata.org/wiki/Q5> ;
+    iop:hasProperty 
+        <https://www.wikidata.org/wiki/Q18185> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "temporal extent: chronic" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q81938> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "controlled list: scale" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q18185> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "role: patient" ;
+             iop:constrains <https://www.wikidata.org/wiki/Q5> ;
+        ] .
+
+<https://www.wikidata.org/wiki/Q81938>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "pain" .
+
+<https://www.wikidata.org/wiki/Q18185>
+    a 
+        iop:Property ;
+    rdfs:label 
+        "grade" .
+
+<https://www.wikidata.org/wiki/Q5>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "person" .
