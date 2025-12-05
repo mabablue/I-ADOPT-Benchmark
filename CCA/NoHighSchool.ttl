@@ -25,16 +25,12 @@ ex:NoHighSchool
         <https://www.wikidata.org/wiki/Q11563> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "condition: without high school diploma" ;
+             rdfs:label "condition: without high school diploma in the past three years" ;
              iop:constrains <https://www.wikidata.org/wiki/Q215627> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "defined by: grouping of homogeneous neighboring building blocks" ;
              iop:constrains <https://www.wikidata.org/wiki/Q3409269> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "aggregation: last three years" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q19033> ;
         ] .
 
 <https://www.wikidata.org/wiki/Q215627>
