@@ -22,6 +22,8 @@ ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/101" ;
         <https://www.wikidata.org/entity/Q104541> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q3481047> ;
+   iop:hasContextObject
+     <https://www.wikidata.org/wiki/Q8104> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "composition: mixture of sulfate-organic-nitrate " ;
@@ -50,6 +52,12 @@ _:b0
         iop:Entity ;
     rdfs:label 
         "aerosol" .
+
+     <https://www.wikidata.org/wiki/Q8104>
+ a 
+   iop:Entity; 
+   rdfs:label
+     "atmosphere" .
 
 <https://www.wikidata.org/entity/Q3481047>
     a 
