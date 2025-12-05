@@ -10,22 +10,18 @@
     rdfs:label 
         "Surface runoff" ;
     skos:definition "Surface runoff measured in kg m⁻² s⁻¹";
-    rdfs:comment "condition: not soaking into the ground, origin: rain, surface, atmosphere, mass flow, flow, water" ;
+    rdfs:comment "condition: not soaking into the ground, surface, water body, mass flow, water" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/123";
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q283> ;
     iop:hasMatrix 
-        ex:Matrix ;
+        _:b0 ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q3295893> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "condition: not soaking into the ground" ;
              iop:constrains <https://www.wikidata.org/entity/Q484298> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "origin: rain" ;
-             iop:constrains <https://www.wikidata.org/entity/Q283> ;
         ] .
 
 <https://www.wikidata.org/entity/Q283>
@@ -34,16 +30,14 @@
     rdfs:label 
         "water" .
 
-ex:Matrix
+_:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    rdfs:label 
-        "flow" ;
     iop:hasSource 
-        <https://www.wikidata.org/entity/Q8104> ;
+        <https://www.wikidata.org/entity/Q484298> ;
     iop:hasTarget 
-        <https://www.wikidata.org/entity/Q484298> .
+        <https://www.wikidata.org/entity/Q15324> .
 
 <https://www.wikidata.org/entity/Q3295893>
     a 
@@ -51,14 +45,14 @@ ex:Matrix
     rdfs:label 
         "mass flow" .
 
-<https://www.wikidata.org/entity/Q8104>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "atmosphere" .
-
 <https://www.wikidata.org/entity/Q484298>
     a 
         iop:Entity ;
     rdfs:label 
         "surface" .
+
+<https://www.wikidata.org/entity/Q15324>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "water body" .
