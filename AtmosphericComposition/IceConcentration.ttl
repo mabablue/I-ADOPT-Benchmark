@@ -11,20 +11,29 @@ ex:IceWater
         iop:Variable ;
     rdfs:label 
         "Ice water content in atmosphere" ;
-    rdfs:comment 
+    skos:definition 
         """mass concentration of ice in atmosphere measured in g/m3""" ;
+    rdfs:comment 
+        """g/m3-> mass concentration, ice -> water, state:solid, atmosphere""" ;
    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/100" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q589446> .
+        <https://www.wikidata.org/entity/Q589446> ;
+    iop:hasConstraint 
+        [ a iop:Constraint ;
+             rdfs:label "state: solid" ;
+             iop:constrains <https://www.wikidata.org/entity/Q283> ;
+        ] .
 
 _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
+    rdfs:label 
+        "bc_0_b6_b0" ;
     iop:hasNumerator 
-        <https://www.wikidata.org/entity/Q23392> ;
+        <https://www.wikidata.org/entity/Q283> ;
     iop:hasDenominator 
         <https://www.wikidata.org/entity/Q8104> .
 
@@ -34,11 +43,11 @@ _:b0
     rdfs:label 
         "mass concentration" .
 
-<https://www.wikidata.org/entity/Q23392>
+<https://www.wikidata.org/entity/Q283>
     a 
         iop:Entity ;
     rdfs:label 
-        "ice" .
+        "water" .
 
 <https://www.wikidata.org/entity/Q8104>
     a 
