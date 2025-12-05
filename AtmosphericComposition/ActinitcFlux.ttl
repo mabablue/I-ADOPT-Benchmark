@@ -8,7 +8,7 @@ ex:ActinicFlux
     a 
         iop:Variable ;
     rdfs:label 
-        "Upwelling actinic flux" ;
+        "Spectral upwelling actinic flux" ;
     skos:definition 
         """Upwelling component of actinic flux in wavelength range of 297-640 nm measured in photons/s/cm2/nm""" ;
     rdfs:comment 
