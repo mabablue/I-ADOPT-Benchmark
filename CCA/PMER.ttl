@@ -19,7 +19,7 @@ ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/115" ;
     iop:hasContextObject 
         <https://www.wikidata.org/entity/Q8104> ;
     iop:hasProperty 
-        <https://www.wikidata.org/wiki/Q39552> ;
+        <https://www.wikidata.org/entity/Q39552> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "location: mean sea level" ;
@@ -32,7 +32,7 @@ ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/115" ;
     rdfs:label 
         "air" .
 
-<https://www.wikidata.org/wiki/Q39552>
+<https://www.wikidata.org/entity/Q39552>
     a 
         iop:Property ;
     rdfs:label 
