@@ -11,19 +11,15 @@ ex:SulfateAerosol
         iop:Variable ;
     rdfs:label 
         "Sulfate organic nitrate in aerosol particles" ;
-    skos:definition 
+    rdfs:comment 
         """Number fraction of aerosol particles from 0.1 um to larger than 1 um that are identified as sulfate-organic-nitrate internal mixtures.""" ;
- rdfs:comment 
-        """Number fraction -> ratio (because of wikidata) aerosol; particle; size: 0.1 um to larger than 1 um; ulfate-organic-nitrate internal mixtures; ADD:particle mixture; quantity: total.""" ;    
-ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/101" ;
+    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/101" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q104541> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q3481047> ;
-   iop:hasContextObject
-     <https://www.wikidata.org/wiki/Q8104> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "composition: mixture of sulfate-organic-nitrate " ;
@@ -52,12 +48,6 @@ _:b0
         iop:Entity ;
     rdfs:label 
         "aerosol" .
-
-     <https://www.wikidata.org/wiki/Q8104>
- a 
-   iop:Entity; 
-   rdfs:label
-     "atmosphere" .
 
 <https://www.wikidata.org/entity/Q3481047>
     a 
