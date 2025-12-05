@@ -13,30 +13,33 @@
         """Mean sea level pressure expressed in Pa""" ;
    rdfs:comment 
 """pressure; location: mean sea level; ADD: atmosphere""" ; 
+ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/115" ;
     iop:hasObjectOfInterest 
-        <https://www.wikidata.org/wiki/Q8104> ;
+        <https://www.wikidata.org/entity/Q7391292> ;
+    iop:hasContextObject 
+        <https://www.wikidata.org/entity/Q8104> ;
     iop:hasProperty 
         <https://www.wikidata.org/wiki/Q39552> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "location: mean sea level" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q8104> ;
+             iop:constrains <https://www.wikidata.org/entity/Q7391292> ;
         ] .
 
-<https://www.wikidata.org/wiki/Q8104>
+<https://www.wikidata.org/entity/Q7391292>
     a 
         iop:Entity ;
     rdfs:label 
-        "atmosphere" .
-
-<https://www.wikidata.org/wiki/Q2796622>
-    a 
-        iop:StatisticalModifier ;
-    rdfs:label 
-        "mean" .
+        "air" .
 
 <https://www.wikidata.org/wiki/Q39552>
     a 
         iop:Property ;
     rdfs:label 
         "pressure" .
+
+<https://www.wikidata.org/entity/Q8104>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "atmosphere" .
