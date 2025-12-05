@@ -15,16 +15,16 @@
     iop:hasObjectOfInterest 
         ex:OoI ;
     iop:hasMatrix 
-        ex:Matrix ;
+        _:b0 ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q55753416> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "condition: evaporated" ;
-             iop:constrains <https://www.wikidata.org/entity/Q36133> ;
+             rdfs:label "condition: at non-limiting water supply" ;
+             iop:constrains ex:OoI ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "condition: at non-limiting water supply" ;
+             rdfs:label "condition: evaporated" ;
              iop:constrains ex:OoI ;
         ] .
 
@@ -34,12 +34,10 @@ ex:OoI
     rdfs:label 
         "water" .
 
-ex:Matrix
+_:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    rdfs:label 
-        "flow" ;
     iop:hasSource 
         <https://www.wikidata.org/entity/Q36133> ;
     iop:hasTarget 
