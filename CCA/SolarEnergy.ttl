@@ -13,35 +13,39 @@
     rdfs:comment "origin: photovoltaik panel, temporal extent: month, energy, amount, building" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/131";
     iop:hasObjectOfInterest 
-        _:b0 ;
+        <https://www.wikidata.org/entity/Q40015> ;
     iop:hasMatrix 
-        _:b1 ;
+        <https://www.wikidata.org/entity/Q41176> ;
     iop:hasProperty 
-        _:b2 ;
+        <https://www.wikidata.org/entity/Q11379> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "origin: photovoltaik panel" ;
-             iop:constrains _:b0 ;
+             iop:constrains <https://www.wikidata.org/entity/Q40015> ;
         ] ,
         [ a iop:Constraint ;
              rdfs:label "temporal extent: month" ;
-             iop:constrains _:b2 ;
+             iop:constrains <https://www.wikidata.org/entity/Q11379> ;
+        ] ,
+        [ a iop:Constraint ;
+             rdfs:label "type: solar" ;
+             iop:constrains <https://www.wikidata.org/entity/Q40015> ;
         ] .
 
-_:b0
+<https://www.wikidata.org/entity/Q40015>
     a 
         iop:Entity ;
     rdfs:label 
-        "energy" .
+        "solar energy" .
 
-_:b1
+<https://www.wikidata.org/entity/Q41176>
     a 
         iop:Entity ;
     rdfs:label 
         "building" .
 
-_:b2
+<https://www.wikidata.org/entity/Q11379>
     a 
         iop:Property ;
     rdfs:label 
-        "amount" .
+        "energy" .
