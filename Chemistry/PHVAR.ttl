@@ -18,12 +18,7 @@ ex:phvar
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q618355> ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q40936> ;
-    iop:hasConstraint 
-        [ a iop:Constraint ;
-             rdfs:label "defined by: hydronium ion activity" ;
-             iop:constrains <https://www.wikidata.org/entity/Q40936> ;
-        ] .
+        <https://www.wikidata.org/entity/Q40936> .
 
 <https://www.wikidata.org/entity/Q618355>
     a 
