@@ -6,7 +6,7 @@
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 
 
-ex:State-of-tube
+ex:State-of-pipe
     a 
         iop:Variable ;
     rdfs:label 
