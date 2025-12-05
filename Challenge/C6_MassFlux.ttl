@@ -15,27 +15,24 @@ ex:C6
       """Mass flux; carbon; soil; vegetation; due to senescence. From indicates the source, into indicates the target.""" ;
   ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/12" ;
     iop:hasObjectOfInterest 
-        _:b0 ;
+        <https://www.wikidata.org/entity/Q623> ;
     iop:hasMatrix 
-        _:b1 ;
+        _:b0 ;
     iop:hasProperty 
         <http://vocabs.lter-europe.net/EnvThes/30361> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "due to: senescence" ;
-             iop:constrains _:b1 ;
+             iop:constrains _:b0 ;
         ] .
 
-_:b0
+<https://www.wikidata.org/entity/Q623>
     a 
-        iop:Entity ,
-        iop:AsymmetricSystem ;
-    iop:hasNumerator 
-        <https://www.wikidata.org/entity/Q623> ;
-    iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q112117182> .
+        iop:Entity ;
+    rdfs:label 
+        "carbon" .
 
-_:b1
+_:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
@@ -51,18 +48,6 @@ _:b1
         iop:Property ;
     rdfs:label 
         "mass flux" .
-
-<https://www.wikidata.org/entity/Q623>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "carbon" .
-
-<https://www.wikidata.org/entity/Q112117182>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "study area" .
 
 <http://vocabs.lter-europe.net/EnvThes/20535>
     a 
