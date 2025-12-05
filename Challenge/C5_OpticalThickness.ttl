@@ -22,7 +22,7 @@ ex:C5
         <https://www.wikidata.org/entity/Q1621273> ;
     iop:hasMatrix 
         <https://www.wikidata.org/entity/Q104541> ;
-    iop:hasContextObject 
+    iop:hasMatrix 
         <https://www.wikidata.org/entity/Q8104> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q890809> ;
