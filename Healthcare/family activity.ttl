@@ -22,7 +22,7 @@
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q25235> ;
     iop:hasMatrix 
-        <https://www.wikidata.org/entity/Q181600> ;
+        <https://www.wikidata.org/entity/Q5> ;
     iop:hasStatisticalModifier 
         <https://www.wikidata.org/entity/Q2796622> ;
     iop:hasProperty 
@@ -43,11 +43,11 @@
     rdfs:label 
         "hours" .
 
-<https://www.wikidata.org/entity/Q181600>
+<https://www.wikidata.org/entity/Q5>
     a 
         iop:Entity ;
     rdfs:label 
-        "patient" .
+        "person" .
 
 <https://www.wikidata.org/entity/Q2796622>
     a 
