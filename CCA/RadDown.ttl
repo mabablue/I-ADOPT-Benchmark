@@ -8,7 +8,7 @@
     a 
         iop:Variable ;
     rdfs:label 
-        "Surface long-wave (thermal) radiation downwards (2D)" ;
+        "Surface long-wave (thermal) radiation downwards" ;
     skos:definition 
         """Surface long-wave (thermal) radiation downwards measured in Wm-2""" ;
     rdfs:comment 
