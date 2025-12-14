@@ -12,7 +12,7 @@ ex:EC1
     skos:definition 
         """Mass concentration of endosulfane sulfate in wet flesh of ostrea edulis, measured in μg/kg.""" ;
     rdfs:comment
-        """Mass concentration; endosulfane sulfate; wet; flesh->body; ostrea edulis; ADD: ratio: mass per  mass.""" ;
+        """Mass fraction; endosulfane sulfate; wet; flesh->body; ostrea edulis; ADD: ratio: mass per  mass.""" ;
     ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/89" ;
     iop:hasObjectOfInterest 
         _:b0 ;
