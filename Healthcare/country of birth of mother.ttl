@@ -27,7 +27,7 @@
         <https://www.wikidata.org/entity/Q6256> ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "condition: mother of patient" ;
+             rdfs:label "condition: mother of person" ;
              iop:constrains <https://www.wikidata.org/entity/Q215627> ;
         ] .
 
