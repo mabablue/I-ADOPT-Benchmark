@@ -35,7 +35,7 @@ _:b0
     a 
         iop:Entity ;
     rdfs:label 
-        "iron(II)" .
+        "iron (II)" .
 
 <https://www.wikidata.org/wiki/Q36133>
     a 
