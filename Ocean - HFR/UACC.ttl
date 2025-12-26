@@ -10,7 +10,7 @@ ex:
     a 
         iop:Variable ;
     rdfs:label 
-        "Eastward velocity uncertainty of water currentcy radar" ;
+        "Eastward velocity uncertainty of water current" ;
     skos:definition 
         """Uncertainty of the eastward component of water velocity in a water body""" ;
     rdfs:comment
