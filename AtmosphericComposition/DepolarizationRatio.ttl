@@ -10,7 +10,7 @@
     a 
         iop:Variable ;
     rdfs:label 
-        "Total Deplorizadion Ratio" ;
+        "Total Deplorization Ratio" ;
     skos:definition 
         """Total Deplorization Ratio: Ratio of backscattered light from the cross-polarized channel to the backscattered light from the parallet-polarized channel. Total is referring to the air as a whole.""" ;
     rdfs:comment 
