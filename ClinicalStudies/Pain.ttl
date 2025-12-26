@@ -27,10 +27,6 @@
              iop:constrains <https://www.wikidata.org/wiki/Q81938> ;
         ] ,
         [ a iop:Constraint ;
-             rdfs:label "controlled list: scale" ;
-             iop:constrains <https://www.wikidata.org/wiki/Q18185> ;
-        ] ,
-        [ a iop:Constraint ;
              rdfs:label "role: patient" ;
              iop:constrains <https://www.wikidata.org/wiki/Q5> ;
         ] .
