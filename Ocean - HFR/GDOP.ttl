@@ -24,8 +24,6 @@ ex:GDOP
     a 
         iop:Entity ,
         iop:SymmetricSystem ;
-    rdfs:label 
-        "relative position" ;
     iop:hasPart 
         _:b0 ,
         _:b1 .
