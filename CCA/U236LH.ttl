@@ -3,20 +3,22 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 <http://example.org/CCA/U236LH>
     a 
         iop:Variable ;
     rdfs:label 
         "Realistic releases of U236 from La Hague" ;
-    skos:definition "Realistic releases of U236 from La Hague (U236LH) in atoms kg-1";
     rdfs:comment 
-        "origin: La Hague facility, condition: released, condition: realistic, soil, Uranium 236, atoms per mass" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/134";
+        """Realistic releases of U236 from La Hague (U236LH) in atoms kg-1""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q176449> ;
+        _:b1 ;
     iop:hasConstraint 
         [ a iop:Constraint ;
              rdfs:label "origin: La Hague facility" ;
@@ -31,18 +33,16 @@ _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    rdfs:label 
-        "bc_0_b36_b0" ;
     iop:hasDenominator 
         <https://www.wikidata.org/entity/Q36133> ;
     iop:hasNumerator 
         <https://www.wikidata.org/entity/Q5955496> .
 
-<https://www.wikidata.org/entity/Q176449>
+_:b1
     a 
         iop:Property ;
     rdfs:label 
-        "number density" .
+        "atoms per mass" .
 
 <https://www.wikidata.org/entity/Q36133>
     a 
