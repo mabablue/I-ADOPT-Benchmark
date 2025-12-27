@@ -5,17 +5,16 @@
 @prefix ex: <http://example.org/iadopt/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
 @prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 ex:SulfateAerosol
     a 
         iop:Variable ;
     rdfs:label 
         "Sulfate organic nitrate in aerosol particles" ;
-    skos:definition 
-        """Number fraction of aerosol particles from 0.1 um to larger than 1 um that are identified as sulfate-organic-nitrate internal mixtures.""" ;
     rdfs:comment 
         """Number fraction -> ratio; aerosol; particle; size:0.1 um to larger than 1 um ; sulfate-organic-nitrate internal mixture; ADD: particl mixture; quantity: total.""" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/101" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasMatrix 
@@ -33,17 +32,17 @@ ex:SulfateAerosol
         ] ,
         [ a iop:Constraint ;
              rdfs:label "size: 0.1 µm to larger than 1 µm" ;
-             iop:constrains <https://www.wikidata.org/entity/Q1621273> ;
+             iop:constrains _:b0 ;
         ] .
 
 _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    iop:hasNumerator 
-        <https://www.wikidata.org/entity/Q1621273> ;
     iop:hasDenominator 
-        _:b1 .
+        _:b1 ;
+    iop:hasNumerator 
+        <https://www.wikidata.org/entity/Q1621273> .
 
 <https://www.wikidata.org/entity/Q104541>
     a 
@@ -57,14 +56,14 @@ _:b0
     rdfs:label 
         "ratio" .
 
-<https://www.wikidata.org/entity/Q1621273>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "particle" .
-
 _:b1
     a 
         iop:Entity ;
     rdfs:label 
         "particle mixture" .
+
+<https://www.wikidata.org/entity/Q1621273>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "particle" .
