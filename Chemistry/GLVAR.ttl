@@ -4,17 +4,17 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 ex:glvar
     a 
         iop:Variable ;
     rdfs:label 
         "solubility of molecular oxygen from air in water" ;
-    skos:definition 
-        """solubility of molecular oxygen from air in water with MilliQ (10.2MOhm) purity at local air conditions""" ;
     rdfs:comment 
-        """solubility; molecular oxygen; air; water; MilliQ (10.2MOhm) purity; at local air conditions""" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/82" ;
+        """solubility of molecular oxygen from air in water with MilliQ (10.2MOhm) purity at local air conditions""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
@@ -37,12 +37,10 @@ _:b0
     a 
         iop:Entity ,
         iop:AsymmetricSystem ;
-    rdfs:label 
-        "bc_0_b10_b0" ;
-    iop:hasNumerator 
-        <https://www.wikidata.org/entity/Q5203615> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/entity/Q283> .
+        <https://www.wikidata.org/entity/Q283> ;
+    iop:hasNumerator 
+        <https://www.wikidata.org/entity/Q5203615> .
 
 <https://www.wikidata.org/entity/Q589446>
     a 
@@ -50,14 +48,14 @@ _:b0
     rdfs:label 
         "mass concentration" .
 
-<https://www.wikidata.org/entity/Q5203615>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "molecular oxygen" .
-
 <https://www.wikidata.org/entity/Q283>
     a 
         iop:Entity ;
     rdfs:label 
         "water" .
+
+<https://www.wikidata.org/entity/Q5203615>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "molecular oxygen" .
