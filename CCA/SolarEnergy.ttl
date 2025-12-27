@@ -3,15 +3,18 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 <http://example.org/CCA/SolarEnergy>
     a 
         iop:Variable ;
     rdfs:label 
         "Solar energy production of building per month" ;
-    skos:definition "Solar energy production of building in kWh";
-    rdfs:comment "origin: photovoltaik panel, temporal extent: month, energy, amount, building" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/131";
+    rdfs:comment 
+        """Solar energy production of building in kWh""" ;
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q40015> ;
     iop:hasMatrix 
@@ -26,10 +29,6 @@
         [ a iop:Constraint ;
              rdfs:label "temporal extent: month" ;
              iop:constrains <https://www.wikidata.org/entity/Q11379> ;
-        ] ,
-        [ a iop:Constraint ;
-             rdfs:label "type: solar" ;
-             iop:constrains <https://www.wikidata.org/entity/Q40015> ;
         ] .
 
 <https://www.wikidata.org/entity/Q40015>
