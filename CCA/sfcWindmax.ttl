@@ -3,20 +3,22 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 <http://example.org/meteo/sfcWindmax>
     a 
         iop:Variable ;
     rdfs:label 
         "Daily Maximum Near-Surface Wind Speed of Gust" ;
-    skos:definition 
+    rdfs:comment 
         """Daily Maximum Near-Surface Wind Speed of Gust, measured in m s⁻¹""" ;
-    rdfs:comment "location: near surface, type: gust, aggregation: daily, speed, maximum, wind";
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/136";
     iop:hasObjectOfInterest 
         <https://www.wikidata.org/entity/Q8094> ;
     iop:hasStatisticalModifier 
-        _:b0 ;
+        <https://www.wikidata.org/wiki/Q10578722> ;
     iop:hasProperty 
         <https://www.wikidata.org/entity/Q3711325> ;
     iop:hasConstraint 
@@ -30,7 +32,7 @@
         ] ,
         [ a iop:Constraint ;
              rdfs:label "aggregation: daily" ;
-             iop:constrains _:b0 ;
+             iop:constrains <https://www.wikidata.org/wiki/Q10578722> ;
         ] .
 
 <https://www.wikidata.org/entity/Q8094>
@@ -39,7 +41,7 @@
     rdfs:label 
         "wind" .
 
-_:b0
+<https://www.wikidata.org/wiki/Q10578722>
     a 
         iop:StatisticalModifier ;
     rdfs:label 
