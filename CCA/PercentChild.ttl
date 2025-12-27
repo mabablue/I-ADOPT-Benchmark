@@ -45,10 +45,10 @@ _:b0
         iop:AsymmetricSystem ;
     rdfs:label 
         "ratio" ;
-    iop:hasNumerator 
-        <https://www.wikidata.org/wiki/Q7569> ;
     iop:hasDenominator 
-        <https://www.wikidata.org/wiki/Q22947> .
+        <https://www.wikidata.org/wiki/Q215627> ;
+    iop:hasNumerator 
+        <https://www.wikidata.org/wiki/Q7569> .
 
 <https://www.wikidata.org/wiki/Q3409269>
     a 
@@ -62,14 +62,14 @@ _:b0
     rdfs:label 
         "percentage" .
 
+<https://www.wikidata.org/wiki/Q215627>
+    a 
+        iop:Entity ;
+    rdfs:label 
+        "person" .
+
 <https://www.wikidata.org/wiki/Q7569>
     a 
         iop:Entity ;
     rdfs:label 
         "child" .
-
-<https://www.wikidata.org/wiki/Q22947>
-    a 
-        iop:Entity ;
-    rdfs:label 
-        "inhabitant" .
