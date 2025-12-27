@@ -3,22 +3,25 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iopp: <https://w3id.org/iadopt/pattern/> .
+@prefix patt: <http://example.org/iadopt/pattern> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix uom: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 
 <http://example.org/CCA/U236GF>
     a 
         iop:Variable ;
     rdfs:label 
         "Global fallout of U‑236 (U236GF)" ;
-    skos:definition "Global fallout of U‑236 (U236GF) in atoms kg-1";
-    rdfs:comment "location: global, condition: deposited, soil, Uranium‑236, atoms per mass" ;
-    ex:issue "https://github.com/mabablue/I-ADOPT-examples-playground/issues/130";
+    rdfs:comment 
+        """Global fallout of U‑236 (U236GF) in atoms kg-1""" ;
     iop:hasObjectOfInterest 
         _:b0 ;
     iop:hasProperty 
-        <https://www.wikidata.org/entity/Q176449> ;
+        _:b1 ;
     iop:hasConstraint 
         [ a iop:Constraint ;
-             rdfs:label "location: global" ;
+             rdfs:label "origin: global" ;
              iop:constrains _:b0 ;
         ] ,
         [ a iop:Constraint ;
@@ -35,11 +38,11 @@ _:b0
     iop:hasNumerator 
         <https://www.wikidata.org/entity/Q5955496> .
 
-<https://www.wikidata.org/entity/Q176449>
+_:b1
     a 
         iop:Property ;
     rdfs:label 
-        "number density" .
+        "atoms per mass" .
 
 <https://www.wikidata.org/entity/Q36133>
     a 
